@@ -125,7 +125,7 @@
   /* background-color: rgb(205, 205, 205); */
 }
 .project-title-sec {
-  height: 10vh;
+  height: 15vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -162,7 +162,8 @@
   padding: 60px 0;
   /* background-color: rgb(255, 198, 124); */
   display: flex;
-  gap: 50px;
+  /* gap: 50px; */
+  gap: 80px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -322,6 +323,86 @@
   background-color: #c7ccfa;
 }
 
+/* //Skill section */
+
+.skill-sec {
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skill-title-sec {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+  gap: 10px;
+  font-weight: 500;
+  /* background-color: rgb(255, 205, 205); */
+}
+.skill-title-underline {
+  height: 2px;
+  width: 0%;
+  background-image: linear-gradient(
+    to left,
+    rgb(197, 248, 255),
+    #abb3ff,
+    rgb(197, 248, 255)
+  );
+
+  /* margin: auto; */
+  transition: all 0.5s linear;
+}
+.skill-sec:hover .skill-title-underline {
+  width: 250px;
+}
+
+/* //skill card section */
+
+.skill-card-sec {
+  width: 80%;
+  display: flex;
+  padding: 50px 0;
+  /* background-color: red; */
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* //Skill card body */
+
+.skill-card-body {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(52, 52, 52);
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.skill-card-body:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 10px 20px 0px rgba(0, 123, 255, 0.152);
+}
+
+.skill-card-logo {
+  width: 70px;
+  height: auto;
+}
+
 /* //contact section */
 
 .contact-sec {
@@ -466,6 +547,17 @@
   .robot {
     max-height: 300px;
     max-width: 300px;
+  }
+
+  .skill-card-sec {
+    width: 90%;
+    display: flex;
+    padding: 50px 0;
+    /* background-color: red; */
+    gap: 40px;
+  }
+  .skill-card-body {
+    box-shadow: 2px 10px 20px 0px rgba(0, 123, 255, 0.11);
   }
 
   .contact-sec {

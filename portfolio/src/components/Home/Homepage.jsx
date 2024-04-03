@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Homepage.css";
 import emailjs from "@emailjs/browser";
 import Loader from "./Loader";
@@ -12,31 +12,43 @@ const Homepage = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    let from_name = document.forms["myForm"]["from_name"].value;
-    let from_email = document.forms["myForm"]["from_email"].value;
-    let subject = document.forms["myForm"]["subject"].value;
-    let message = document.forms["myForm"]["message"].value;
-    // console.log(from_name);
-    if (from_name == "") {
-      toast.error("You should enter Name ", {
-        position: "bottom-center",
-      });
-      return false;
-    } else if (from_email == "") {
-      toast.error("You should enter Email", {
-        position: "bottom-center",
-      });
-      return false;
-    } else if (subject == "") {
-      toast.error("You should enter Subject", {
-        position: "bottom-center",
-      });
-      return false;
-    } else if (message == "") {
-      toast.error("You should enter Message", {
-        position: "bottom-center",
-      });
-      return false;
+    // let from_name = document.forms["myForm"]["from_name"].value;
+    // let from_email = document.forms["myForm"]["from_email"].value;
+    // let subject = document.forms["myForm"]["subject"].value;
+    // let message = document.forms["myForm"]["message"].value;
+    // // console.log(from_name);
+    // if (from_name == "") {
+    //   toast.error("You should enter Name ", {
+    //     position: "bottom-center",
+    //   });
+    //   return false;
+    // } else if (from_email == "") {
+    //   toast.error("You should enter Email", {
+    //     position: "bottom-center",
+    //   });
+    //   return false;
+    // } else if (subject == "") {
+    //   toast.error("You should enter Subject", {
+    //     position: "bottom-center",
+    //   });
+    //   return false;
+    // } else if (message == "") {
+    //   toast.error("You should enter Message", {
+    //     position: "bottom-center",
+    //   });
+    //   return false;
+    // }
+
+    const fields = ["from_name", "from_email", "subject", "message"];
+
+    for (let field of fields) {
+      const value = document.forms["myForm"][field].value;
+      if (value.trim() === "") {
+        toast.error(`You should enter ${field.replace("_", " ")}`, {
+          position: "bottom-center",
+        });
+        return false;
+      }
     }
 
     setLoader(true);
@@ -48,6 +60,7 @@ const Homepage = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          toast.success("Email sent", { position: "bottom-center" });
           setLoader(false);
         },
         (error) => {
@@ -251,6 +264,58 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* //Skill section */}
+
+        <div className="skill-sec">
+          <div className="skill-title-sec">
+            {" "}
+            Skills
+            <div className="skill-title-underline"></div>
+          </div>
+          <div className="skill-card-sec">
+            <div className="skill-card-body">
+              <img src="/react.png" alt="" className='skill-card-logo' />
+              React
+            </div>
+            <div className="skill-card-body">
+              <img src="/redux.png" alt="" className='skill-card-logo' />
+              Redux
+            </div>
+            <div className="skill-card-body">
+              <img src="/mongodb.png" alt="" className='skill-card-logo' />
+              Mongo DB
+            </div>
+            <div className="skill-card-body">
+              <img src="/node.png" alt="" className='skill-card-logo' />
+              Node JS
+            </div>
+            <div className="skill-card-body">
+              <img src="/express.png" alt="" className='skill-card-logo' />
+              Express JS
+            </div>
+            <div className="skill-card-body">
+              <img src="/git.png" alt="" className='skill-card-logo' />
+              Git
+            </div>
+            <div className="skill-card-body">
+              <img src="/bootstrap.png" alt="" className='skill-card-logo' />
+              Bootstrap
+            </div>
+            <div className="skill-card-body">
+              <img src="/javascript.png" alt="" className='skill-card-logo' />
+              Javascript
+            </div>
+            <div className="skill-card-body">
+              <img src="/css.png" alt="" className='skill-card-logo' />
+              CSS
+            </div>
+            <div className="skill-card-body">
+              <img src="/html.png" alt="" className='skill-card-logo' />
+              HTML
             </div>
           </div>
         </div>
