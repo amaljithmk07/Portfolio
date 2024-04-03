@@ -93,7 +93,7 @@ const Homepage = () => {
               portfolio and past projects.
             </p>
             <a
-              href="./public/Mern Resume.pdf"
+              href="/Mern Resume.pdf"
               download="Amaljith Resume.pdf"
               className="home-sec-btn"
             >

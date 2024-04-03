@@ -79,6 +79,7 @@
   cursor: pointer;
   border-radius: 10px 7px;
   background-color: #8e99f8;
+  -webkit-tap-highlight-color: transparent;
 }
 .home-sec-btn:hover {
   background-color: #7c89ff;
