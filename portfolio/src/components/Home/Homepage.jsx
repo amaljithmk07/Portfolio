@@ -99,7 +99,7 @@ const Homepage = () => {
           <div className="home-sec-content seperate-background">
             <h1>Hello !</h1>
             <h1>I am Amaljith</h1>
-            <p>
+            <p className="home-sec-content-p">
               I'm an experienced web developer skilled in both front-end and
               back-end development, dedicated to creating flawless digital
               experiences. Feel free to explore my resume for a glimpse into my
@@ -127,7 +127,8 @@ const Homepage = () => {
         <div className="project-sec">
           <div className="project-title-sec" id="project-sec">
             {" "}
-            Personal Projects
+            {/* Personal Projects */}
+            Personal Endeavors
             <div className="project-title-underline"></div>
           </div>
           <div className="project-content-sec">
@@ -270,11 +271,10 @@ const Homepage = () => {
 
         {/* //Skill section */}
 
-        <div className="skill-sec">
+        <div className="skill-sec" id="skill-sec">
           <div className="skill-title-sec">
             {" "}
-            Skills
-            <div className="skill-title-underline"></div>
+            Expertise <div className="skill-title-underline"></div>
           </div>
           <div className="skill-card-sec">
             <div className="skill-card-body">
@@ -324,7 +324,10 @@ const Homepage = () => {
 
         <div className="contact-sec">
           <div className="contact-sec-left-body" id="contact-sec">
-            <div className="contact-sec-title-1">CONTACT US </div>
+            <div className="contact-sec-title-1">
+              {/* CONTACT US */}
+              CONNECT ME{" "}
+            </div>
             <div className="contact-sec-title-2">
               {" "}
               Let's talk <br /> about you
@@ -332,7 +335,7 @@ const Homepage = () => {
           </div>
           <div className="contact-sec-right-body">
             <form action="" className="form-sec" ref={form} name="myForm">
-              <div className="form-title"> Send us a Message</div>
+              <div className="form-title"> Send me a Message</div>
               <div className="form-input-field-sec">
                 Full Name
                 <input

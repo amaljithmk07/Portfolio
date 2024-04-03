@@ -33,13 +33,13 @@ const Navbar = () => {
             <Link
               className="navbar-menu-data"
               activeClass="active"
-              to="blog-sec"
+              to="skill-sec"
               spy={true}
               smooth={true}
               offset={-70}
               // duration={500}
             >
-              Blog
+              Skills
             </Link>{" "}
             <Link
               className="navbar-menu-data"
@@ -50,7 +50,7 @@ const Navbar = () => {
               offset={-70}
               // duration={500}
             >
-              Contact Us
+              Contact Me
             </Link>{" "}
           </ul>
         </div>
