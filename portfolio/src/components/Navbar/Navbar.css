@@ -22,7 +22,8 @@
 } */
 .navbar-menu-sec {
   height: 100%;
-  width: 60%;
+  /* width: 60%; */
+  width: 900px;
   /* background-color: blue; */
   display: flex;
   justify-content: center;
@@ -42,16 +43,42 @@
   height: 45%;
   width: 100px;
   color: #8e99f8;
-  font-size: .95rem;
+  font-size: 0.95rem;
   font-weight: 400;
   border-radius: 10px 7px;
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.4s ease-in-out;
 }
 .navbar-menu-data:hover {
   background-color: #8e99f8;
   color: aliceblue;
+}
+@media screen and (max-width: 900px) {
+  .navbar-menu-sec {
+    width: 100%;
+  }
+  .navbar-menu-items {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-menu-sec {
+    justify-content: center;
+  }
+  .navbar-menu-items {
+    justify-content: end;
+    width: 90%;
+  }
+  .navbar-menu-data {
+    height: 45%;
+    width: 80px;
+  }
 }
