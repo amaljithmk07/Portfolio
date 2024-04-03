@@ -1,10 +1,65 @@
 import React, { useRef, useState } from "react";
 import "./Homepage.css";
-import { Link } from "react-scroll";
+import emailjs from "@emailjs/browser";
+import Loader from "./Loader";
+import toast, { Toaster } from "react-hot-toast";
 
 const Homepage = () => {
+  const form = useRef();
+
+  const [loader, setLoader] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    let from_name = document.forms["myForm"]["from_name"].value;
+    let from_email = document.forms["myForm"]["from_email"].value;
+    let subject = document.forms["myForm"]["subject"].value;
+    let message = document.forms["myForm"]["message"].value;
+    // console.log(from_name);
+    if (from_name == "") {
+      toast.error("You should enter Name ", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (from_email == "") {
+      toast.error("You should enter Email", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (subject == "") {
+      toast.error("You should enter Subject", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (message == "") {
+      toast.error("You should enter Message", {
+        position: "bottom-center",
+      });
+      return false;
+    }
+
+    setLoader(true);
+
+    emailjs
+      .sendForm("service_8xh8x8t", "template_thod5i1", form.current, {
+        publicKey: "PdNj-AAnq6y2LxZEH",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setLoader(false);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setLoader(false);
+        }
+      );
+  };
+
   return (
     <div>
+      <Toaster />
       <div className="homepage-main">
         {/* //Home section */}
 
@@ -205,26 +260,62 @@ const Homepage = () => {
         <div className="contact-sec">
           <div className="contact-sec-left-body" id="contact-sec">
             <div className="contact-sec-title-1">CONTACT US </div>
-            <div className="contact-sec-title-2"> Let's talk <br /> about you</div>
+            <div className="contact-sec-title-2">
+              {" "}
+              Let's talk <br /> about you
+            </div>
           </div>
           <div className="contact-sec-right-body">
-            <form action="" className="form-sec">
+            <form action="" className="form-sec" ref={form} name="myForm">
               <div className="form-title"> Send us a Message</div>
               <div className="form-input-field-sec">
                 Full Name
-                <input type="text" className="form-input-field" required />
+                <input
+                  type="text"
+                  className="form-input-field"
+                  required
+                  name="from_name"
+                />
               </div>
               <div className="form-input-field-sec">
                 Email
-                <input type="text" className="form-input-field" required />
+                <input
+                  type="text"
+                  className="form-input-field"
+                  required
+                  name="from_email"
+                />
+              </div>
+              <div className="form-input-field-sec">
+                Subject
+                <input
+                  type="text"
+                  className="form-input-field"
+                  required
+                  name="subject"
+                />
               </div>
               <div className="form-input-field-sec">
                 Your message here
-                <input type="text" className="form-input-field" required />
+                <input
+                  type="text"
+                  className="form-input-field"
+                  required
+                  name="message"
+                />
               </div>
-              <button className="form-send-btn">
-                Send <img src="/send.png" alt="" className="form-btn-icon" />
-              </button>
+              {loader == false ? (
+                <button className="form-send-btn" onClick={sendEmail}>
+                  <>
+                    Send{" "}
+                    <img src="/send.png" alt="" className="form-btn-icon" />
+                  </>
+                </button>
+              ) : (
+                <>
+                  <Loader />
+                </>
+              )}
             </form>
           </div>
         </div>
