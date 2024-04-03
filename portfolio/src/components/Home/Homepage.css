@@ -12,7 +12,7 @@
 /* //Home section */
 
 .home-sec {
-  height: 100vh;
+  min-height: 100vh;
   /* background-color: rgb(255, 0, 0); */
   width: 90%;
   display: flex;
@@ -30,9 +30,9 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  left: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  right: 0;
   background-color: #8e99f8;
   transition: all 0.5s ease-in-out;
 }
@@ -46,7 +46,7 @@
 /* //Home contents */
 
 .home-sec-content {
-  height: 50vh;
+  min-height: 50vh;
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -324,7 +324,7 @@
   align-items: center;
 }
 .contact-sec-left-body {
-  height: 100vh;
+  min-height: 100vh;
   width: 40%;
   display: flex;
   justify-content: center;
@@ -347,7 +347,7 @@
   /* background-color: red; */
 }
 .contact-sec-right-body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -432,4 +432,57 @@
 .form-send-btn:hover .form-btn-icon {
   opacity: 1;
   transform: translateX(200%);
+}
+
+/* //Responsive area */
+
+@media screen and (max-width: 900px) {
+  .home-sec {
+    min-height: 150vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    /* background-color: blue; */
+    gap: 30px;
+  }
+  .home-sec-content {
+    min-height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .robot-back,
+  .robot {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .contact-sec {
+    flex-direction: column;
+  }
+  .contact-sec-left-body,
+  .contact-sec-right-body {
+    min-height: 70vh;
+    width: 100%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .project-content-sec {
+    width: 100%;
+  }
+  .project-card-main-body {
+    height: 260px;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .project-card-sub-body {
+    height: 255px;
+    width: 90%;
+    box-shadow: 0px 0px 30px #e6b5ff65;
+  }
+  .project-card-body {
+    width: 100%;
+    height: 250px;
+    /* background-color: rgb(111, 0, 255); */
+  }
 }
