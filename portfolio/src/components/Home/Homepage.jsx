@@ -164,7 +164,7 @@ const Homepage = () => {
                         <img
                           src="/github.png"
                           alt=""
-                          className="project-logo"
+                          className="project-logo "
                         />
                         <div class="project-logo-text">View on GitHub</div>
                       </a>
@@ -205,7 +205,7 @@ const Homepage = () => {
                         <img
                           src="/github.png"
                           alt=""
-                          className="project-logo"
+                          className="project-logo "
                         />
                         <div class="project-logo-text">View on GitHub</div>
                       </a>
@@ -249,7 +249,7 @@ const Homepage = () => {
                         <img
                           src="/github.png"
                           alt=""
-                          className="project-logo"
+                          className="project-logo "
                         />
                         <div class="project-logo-text">View on GitHub</div>
                       </a>
@@ -278,43 +278,43 @@ const Homepage = () => {
           </div>
           <div className="skill-card-sec">
             <div className="skill-card-body">
-              <img src="/react.png" alt="" className='skill-card-logo' />
+              <img src="/react.png" alt="" className="skill-card-logo" />
               React
             </div>
             <div className="skill-card-body">
-              <img src="/redux.png" alt="" className='skill-card-logo' />
+              <img src="/redux.png" alt="" className="skill-card-logo" />
               Redux
             </div>
             <div className="skill-card-body">
-              <img src="/mongodb.png" alt="" className='skill-card-logo' />
+              <img src="/mongodb.png" alt="" className="skill-card-logo" />
               Mongo DB
             </div>
             <div className="skill-card-body">
-              <img src="/node.png" alt="" className='skill-card-logo' />
+              <img src="/node.png" alt="" className="skill-card-logo" />
               Node JS
             </div>
             <div className="skill-card-body">
-              <img src="/express.png" alt="" className='skill-card-logo' />
+              <img src="/express.png" alt="" className="skill-card-logo" />
               Express JS
             </div>
             <div className="skill-card-body">
-              <img src="/git.png" alt="" className='skill-card-logo' />
+              <img src="/git.png" alt="" className="skill-card-logo" />
               Git
             </div>
             <div className="skill-card-body">
-              <img src="/bootstrap.png" alt="" className='skill-card-logo' />
+              <img src="/bootstrap.png" alt="" className="skill-card-logo" />
               Bootstrap
             </div>
             <div className="skill-card-body">
-              <img src="/javascript.png" alt="" className='skill-card-logo' />
+              <img src="/javascript.png" alt="" className="skill-card-logo" />
               Javascript
             </div>
             <div className="skill-card-body">
-              <img src="/css.png" alt="" className='skill-card-logo' />
+              <img src="/css.png" alt="" className="skill-card-logo" />
               CSS
             </div>
             <div className="skill-card-body">
-              <img src="/html.png" alt="" className='skill-card-logo' />
+              <img src="/html.png" alt="" className="skill-card-logo" />
               HTML
             </div>
           </div>
