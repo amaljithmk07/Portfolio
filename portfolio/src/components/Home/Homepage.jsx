@@ -105,14 +105,41 @@ const Homepage = () => {
               experiences. Feel free to explore my resume for a glimpse into my
               portfolio and past projects.
             </p>
-            <a
-              href="/Mern Resume.pdf"
-              download="Amaljith Resume.pdf"
-              className="home-sec-btn"
-            >
-              Download CV
-              <img src="/download.png" alt="" className="home-sec-btn-icon" />
-            </a>
+            <div className="home-sec-content-btn-sec">
+              <a
+                href="/Mern Resume.pdf"
+                download="Amaljith Resume.pdf"
+                className="home-sec-btn"
+              >
+                Download CV
+                <img
+                  src="/download.png"
+                  alt=""
+                  className="home-sec-btn-icon"
+                />
+              </a>
+
+              <a
+                href="https://github.com/amaljithmk07"
+                className="home-sec-socialmedia-btn"
+              >
+                <img
+                  src="/github.png"
+                  alt=""
+                  className="home-sec-btn-icon"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/amaljithmk/"
+                className="home-sec-socialmedia-btn"
+                >
+              <img
+                src="/linkedin.png"
+                alt=""
+                className="home-sec-btn-icon"
+                />
+                </a>
+            </div>
           </div>
           <div className="home-sec-content">
             <div className="home-sec-content-img-sec">

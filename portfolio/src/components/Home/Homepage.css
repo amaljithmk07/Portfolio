@@ -25,6 +25,7 @@
 .home-sec-side-bar {
   height: 200px;
   width: 45px;
+  /* position:fixed; */
   position: absolute;
   display: flex;
   justify-content: space-evenly;
@@ -58,17 +59,26 @@
   /* background-color: rgb(30, 1, 1); */
   width: 40%;
 }
-.home-sec-content-p {
-  font-size: 0.95rem;
-  line-height: 23px;
-  letter-spacing: 0.3px;
-}
 .seperate-background {
   background-image: url("/home-back.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+}
+.home-sec-content-p {
+  font-size: 0.95rem;
+  line-height: 23px;
+  letter-spacing: 0.3px;
+}
+.home-sec-content-btn-sec {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* background-color: red; */
+  justify-content: start;
+  align-items: center;
 }
 .home-sec-btn {
   height: 35px;
@@ -91,16 +101,31 @@
   background-color: #6773db;
 }
 
+.home-sec-socialmedia-btn {
+  height: 35px;
+  width: 35px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px 7px;
+  background-color: #7c89ff;
+  -webkit-tap-highlight-color: transparent;
+}
 .home-sec-btn-icon {
   height: 20px;
   width: auto;
   filter: invert(1);
+  -webkit-tap-highlight-color: transparent;
 }
+
+/* //right side robot image area */
 
 .home-sec-content-img-sec {
   height: 100%;
   width: 100%;
-  /* background-color: rgb(210, 202, 202); */
+  /* background-color: rgb(103, 15, 15); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,7 +280,7 @@
   min-height: 80px;
   width: 95%;
   line-height: 19px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -525,7 +550,7 @@
 }
 .form-send-btn:hover {
   padding-right: 20px;
-  background-color: rgb(3, 66, 255);
+  background-color: rgb(4, 93, 216);
 }
 
 .form-btn-icon {
@@ -561,6 +586,10 @@
     /* background-color: red; */
   }
   .home-sec-btn {
+    height: 40px;
+  }
+  .home-sec-socialmedia-btn {
+    width: 40px;
     height: 40px;
   }
   .robot-back,
