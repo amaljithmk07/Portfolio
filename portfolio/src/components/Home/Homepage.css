@@ -113,6 +113,11 @@
   background-color: #7c89ff;
   -webkit-tap-highlight-color: transparent;
 }
+
+.home-sec-socialmedia-btn:hover {
+  background-color: #6773db;
+}
+
 .home-sec-btn-icon {
   height: 20px;
   width: auto;
@@ -569,6 +574,70 @@
   transform: translateX(200%);
 }
 
+/* //Footer section */
+
+.footer-sec {
+  min-height: 40vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footer-sec-content {
+  min-height: 40vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footer-card-sec {
+  height: 150px;
+  width: 200px;
+  color: #3e3e3e;
+  -webkit-tap-highlight-color: transparent;
+  /* background-color: rgb(255, 230, 230); */
+  border-radius: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease-in-out;
+}
+.footer-card-sec:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 10px 20px 0px rgba(0, 123, 255, 0.101);
+}
+.footer-icon {
+  height: auto;
+  width: 45px;
+}
+.footer-sec-data {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  font-size: .8rem;
+  justify-content: center;
+  /* font-weight: 600; */
+  align-items: center;
+  color: rgb(54, 54, 54);
+  font-family: sans-serif;
+  box-shadow: 2px -5px 10px 0px rgba(0, 26, 255, 0.047);
+
+}
+
 /* //Responsive area */
 
 @media screen and (max-width: 900px) {
@@ -576,7 +645,6 @@
     min-height: 130vh;
     flex-direction: column-reverse;
     justify-content: center;
-
     /* background-color: blue; */
     gap: 30px;
   }
@@ -614,12 +682,21 @@
 
   .contact-sec {
     flex-direction: column;
+    /* background: red; */
+    padding: 50px 0;
   }
   .contact-sec-left-body,
   .contact-sec-right-body {
     min-height: 70vh;
     width: 100%;
     align-items: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer-card-sec {
+    height: 150px;
+    width: 170px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -664,6 +741,9 @@
     /* height: 70px; */
     height: 50px;
     width: 270px;
+  }
+  .footer-card-sec {
+    box-shadow: 2px 7px 20px 0px rgba(0, 123, 255, 0.064);
   }
 }
 @media screen and (max-width: 400px) {

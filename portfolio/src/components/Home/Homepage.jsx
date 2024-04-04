@@ -112,33 +112,21 @@ const Homepage = () => {
                 className="home-sec-btn"
               >
                 Download CV
-                <img
-                  src="/download.png"
-                  alt=""
-                  className="home-sec-btn-icon"
-                />
+                <img src="/download.png" alt="" className="home-sec-btn-icon" />
               </a>
 
               <a
                 href="https://github.com/amaljithmk07"
                 className="home-sec-socialmedia-btn"
               >
-                <img
-                  src="/github.png"
-                  alt=""
-                  className="home-sec-btn-icon"
-                />
+                <img src="/github.png" alt="" className="home-sec-btn-icon" />
               </a>
               <a
                 href="https://www.linkedin.com/in/amaljithmk/"
                 className="home-sec-socialmedia-btn"
-                >
-              <img
-                src="/linkedin.png"
-                alt=""
-                className="home-sec-btn-icon"
-                />
-                </a>
+              >
+                <img src="/linkedin.png" alt="" className="home-sec-btn-icon" />
+              </a>
             </div>
           </div>
           <div className="home-sec-content">
@@ -413,6 +401,34 @@ const Homepage = () => {
               )}
             </form>
           </div>
+        </div>
+
+        {/* //Footer */}
+
+        <div className="footer-sec">
+          <div className="footer-sec-content">
+            <a
+              className="footer-card-sec"
+              href="https://maps.app.goo.gl/ubY4SunqyHHi9hPq7"
+            >
+              <img src="/location.png" alt="" className="footer-icon" />
+              Calicut,Kerala
+            </a>
+
+            <a className="footer-card-sec" href="tel:8086171296">
+              <img src="/phone.png" alt="" className="footer-icon" />
+              +91-(8086)171296
+            </a>
+
+            <a
+              className="footer-card-sec"
+              href="mailto: ama;jithmk44@gmail.com"
+            >
+              <img src="/email.png" alt="" className="footer-icon" />
+              Amaljithmk44@gmail.com
+            </a>
+          </div>
+          <div className="footer-sec-data">© 2024 All Rights Reserved </div>
         </div>
       </div>
     </div>
