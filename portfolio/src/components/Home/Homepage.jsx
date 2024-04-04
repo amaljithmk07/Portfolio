@@ -107,8 +107,8 @@ const Homepage = () => {
             </p>
             <div className="home-sec-content-btn-sec">
               <a
-                href="/Mern Resume.pdf"
-                download="Amaljith Resume.pdf"
+                href="/Amaljith MERN Resume.pdf"
+                download="Amaljith MERN Resume.pdf"
                 className="home-sec-btn"
               >
                 Download CV
