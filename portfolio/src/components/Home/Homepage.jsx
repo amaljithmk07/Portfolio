@@ -422,7 +422,7 @@ const Homepage = () => {
 
             <a
               className="footer-card-sec"
-              href="mailto: ama;jithmk44@gmail.com"
+              href="mailto:amaljithmk44@gmail.com"
             >
               <img src="/email.png" alt="" className="footer-icon" />
               Amaljithmk44@gmail.com

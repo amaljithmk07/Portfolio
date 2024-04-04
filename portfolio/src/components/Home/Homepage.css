@@ -696,7 +696,8 @@
   .footer-card-sec {
     height: 150px;
     width: 170px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    /* background-color: red; */
   }
 }
 @media screen and (max-width: 600px) {
