@@ -12,44 +12,44 @@ const Homepage = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // let from_name = document.forms["myForm"]["from_name"].value;
-    // let from_email = document.forms["myForm"]["from_email"].value;
-    // let subject = document.forms["myForm"]["subject"].value;
-    // let message = document.forms["myForm"]["message"].value;
-    // // console.log(from_name);
-    // if (from_name == "") {
-    //   toast.error("You should enter Name ", {
-    //     position: "bottom-center",
-    //   });
-    //   return false;
-    // } else if (from_email == "") {
-    //   toast.error("You should enter Email", {
-    //     position: "bottom-center",
-    //   });
-    //   return false;
-    // } else if (subject == "") {
-    //   toast.error("You should enter Subject", {
-    //     position: "bottom-center",
-    //   });
-    //   return false;
-    // } else if (message == "") {
-    //   toast.error("You should enter Message", {
-    //     position: "bottom-center",
-    //   });
-    //   return false;
-    // }
-
-    const fields = ["from_name", "from_email", "subject", "message"];
-
-    for (let field of fields) {
-      const value = document.forms["myForm"][field].value;
-      if (value.trim() === "") {
-        toast.error(`You should enter ${field.replace("_", " ")}`, {
-          position: "bottom-center",
-        });
-        return false;
-      }
+    let from_name = document.forms["myForm"]["from_name"].value;
+    let from_email = document.forms["myForm"]["from_email"].value;
+    let subject = document.forms["myForm"]["subject"].value;
+    let message = document.forms["myForm"]["message"].value;
+    // console.log(from_name);
+    if (from_name == "") {
+      toast.error("You should enter Name ", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (from_email == "") {
+      toast.error("You should enter Email", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (subject == "") {
+      toast.error("You should enter Subject", {
+        position: "bottom-center",
+      });
+      return false;
+    } else if (message == "") {
+      toast.error("You should enter Message", {
+        position: "bottom-center",
+      });
+      return false;
     }
+
+    // const fields = ["from_name", "from_email", "subject", "message"];
+
+    // for (let field of fields) {
+    //   const value = document.forms["myForm"][field].value;
+    //   if (value.trim() === "") {
+    //     toast.error(`You should enter ${field.replace("_", " ")}`, {
+    //       position: "bottom-center",
+    //     });
+    //     return false;
+    //   }
+    // }
 
     setLoader(true);
 
