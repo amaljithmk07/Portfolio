@@ -50,7 +50,7 @@ const Navbar = () => {
               offset={-70}
               // duration={500}
             >
-              Contact Me
+              Contact 
             </Link>{" "}
           </ul>
         </div>

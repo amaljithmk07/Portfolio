@@ -100,10 +100,19 @@ const Homepage = () => {
             <h1>Hello !</h1>
             <h1>I am Amaljith</h1>
             <p className="home-sec-content-p">
-              I'm an experienced web developer skilled in both front-end and
-              back-end development, dedicated to creating flawless digital
-              experiences. Feel free to explore my resume for a glimpse into my
-              portfolio and past projects.
+              I'm a proficient Full Stack web developer adept in both front-end
+              and back-end development, committed to crafting seamless digital
+              experiences. Please feel free to peruse my CV to get a glimpse of
+              my portfolio and previous endeavors.
+              {/* Hello, all! I'm Amaljith M K, an enthusiastic and motivated web
+              developer with proficiency in both frontend and backend
+              technologies. Lately, I finished an extensive MERN stack course,
+              refining my abilities and understanding in constructing resilient
+              web applications. Along my educational path, I've tackled various
+              demanding ventures to enhance my skills and aptitude in addressing
+              challenges. My commitment to mastering the art of web development
+              motivates me to produce outstanding outcomes in each
+              endeavor I pursue. */}
             </p>
             <div className="home-sec-content-btn-sec">
               <a
@@ -281,6 +290,52 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
+
+            {/* //Personal Portfolio */}
+
+            <div className="project-card-main-body">
+              <div className="project-card-sub-body">
+                <div className="project-card-body">
+                  <div className="project-card-img-sec">
+                    <img
+                      src="/portfolio.jpg"
+                      alt=""
+                      className="project-card-img"
+                    />
+                  </div>
+                  <div className="project-card-content-sec">
+                    <div className="project-card-project-title">
+                      Personal Portfolio
+                    </div>
+                    <div className="project-card-project-details">
+                      Interactive web application displaying extensive
+                      information about my professional portfolio, encompassing
+                      expertise, key projects, and contact details.
+                    </div>
+                    <div className="project-card-project-logo-sec">
+                      <a
+                        href="https://github.com/amaljithmk07/Portfolio"
+                        className="project-github-btn"
+                      >
+                        <img
+                          src="/github.png"
+                          alt=""
+                          className="project-logo "
+                        />
+                        <div class="project-logo-text">View on GitHub</div>
+                      </a>
+                      <a
+                        href="http://amaljithmk.vercel.app"
+                        className="project-btn"
+                      >
+                        Go to web
+                        <img src="/web.png" alt="" className="project-logo" />
+                      </a>{" "}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -311,6 +366,18 @@ const Homepage = () => {
             <div className="skill-card-body">
               <img src="/express.png" alt="" className="skill-card-logo" />
               Express JS
+            </div>
+            <div className="skill-card-body">
+              <img src="/postman.png" alt="" className="skill-card-logo" />
+              Postman
+            </div>
+            <div className="skill-card-body">
+              <img src="/rest-api.png" alt="" className="skill-card-logo" />
+              REST API{" "}
+            </div>
+            <div className="skill-card-body">
+              <img src="/jwt.png" alt="" className="skill-card-logo" />
+              JWT
             </div>
             <div className="skill-card-body">
               <img src="/git.png" alt="" className="skill-card-logo" />
@@ -420,10 +487,7 @@ const Homepage = () => {
               +91-(8086)171296
             </a>
 
-            <a
-              className="footer-card-sec"
-              href="mailto:amaljithmk44@gmail.com"
-            >
+            <a className="footer-card-sec" href="mailto:amaljithmk44@gmail.com">
               <img src="/email.png" alt="" className="footer-icon" />
               Amaljithmk44@gmail.com
             </a>
