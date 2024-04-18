@@ -5,7 +5,12 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const Navbar = () => {
   const [islandOn, setIslandOn] = useState(false);
   const islandOnHandler = () => {
-    setIslandOn((prev) => !prev);
+    setIslandOn(true);
+  };
+  const islandOffHandler = () => {
+    setTimeout(() => {
+      setIslandOn(false);
+    }, 200);
   };
   return (
     <div>
@@ -66,12 +71,65 @@ const Navbar = () => {
           }
           onClick={islandOnHandler}
         >
-
-
-          <div className={islandOn == true ? "section" : "section1"}></div>
-          <div className={islandOn == true ? "section" : "section1"}></div>
-          <div className={islandOn == true ? "section" : "section1"}></div>
-          <div className={islandOn == true ? "section" : "section1"}></div>
+          {islandOn == true ? (
+            <>
+              <div className="section">
+                <Link
+                  onClick={islandOffHandler}
+                  activeClass="active"
+                  to="home-sec"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                >
+                  Home
+                </Link>
+              </div>
+              <div className="section">
+                <Link
+                  onClick={islandOffHandler}
+                  activeClass="active"
+                  to="project-sec"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                >
+                  Project
+                </Link>
+              </div>
+              <div className="section">
+                <Link
+                  onClick={islandOffHandler}
+                  activeClass="active"
+                  to="skill-sec"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                >
+                  skills
+                </Link>
+              </div>
+              <div className="section">
+                <Link
+                  onClick={islandOffHandler}
+                  activeClass="active"
+                  to="contact-sec"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                >
+                  Contact
+                </Link>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="section1"></div>
+              <div className="section1"></div>
+              <div className="section1"></div>
+              <div className="section1"></div>
+            </>
+          )}
         </div>
       </div>
     </div>
