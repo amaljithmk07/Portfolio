@@ -58,8 +58,20 @@ const Navbar = () => {
             </Link>{" "}
           </ul>
         </div>
-        <div className={islandOn==false?"navbar-phone-menu-sec":"navbar-island-menu-sec"} onClick={islandOnHandler}>
-          sdsdsd
+        <div
+          className={
+            islandOn == false
+              ? "navbar-phone-menu-sec"
+              : "navbar-island-menu-sec"
+          }
+          onClick={islandOnHandler}
+        >
+
+
+          <div className={islandOn == true ? "section" : "section1"}></div>
+          <div className={islandOn == true ? "section" : "section1"}></div>
+          <div className={islandOn == true ? "section" : "section1"}></div>
+          <div className={islandOn == true ? "section" : "section1"}></div>
         </div>
       </div>
     </div>

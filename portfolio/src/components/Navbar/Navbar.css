@@ -1,5 +1,5 @@
 .navbar-main {
-  height: 10vh;
+  min-height: 10vh;
   width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -40,7 +40,8 @@
   padding: 0;
 }
 .navbar-menu-data {
-  height: 45%;
+  /* height: 45%; */
+  height: 35px;
   width: 100px;
   color: #8e99f8;
   font-size: 0.95rem;
@@ -57,10 +58,10 @@
   background-color: #8e99f8;
   color: aliceblue;
 }
-.navbar-phone-menu-sec ,
-  .navbar-island-menu-sec {
-display: none;
-  }
+.navbar-phone-menu-sec,
+.navbar-island-menu-sec {
+  display: none;
+}
 
 @media screen and (max-width: 900px) {
   .navbar-menu-sec {
@@ -88,20 +89,27 @@ display: none;
   }
 } */
 
-
-
 @media screen and (max-width: 400px) {
+  .navbar-main {
+    /* justify-content: end; */
+    justify-content: center;
+    align-items: start;
+    background-color: transparent;
+    box-shadow: unset;
+  }
   .navbar-menu-sec {
     /* display: flex; */
     display: none;
     justify-content: center;
     /* background-color: rgb(0, 213, 255); */
   }
-  .navbar-main {
-    /* justify-content: end; */
+  .navbar-menu-items {
     justify-content: center;
-    align-items: start;
-    background-color: transparent;
+    width: 90%;
+  }
+  .navbar-menu-data {
+    height: 45%;
+    width: 80px;
   }
   .navbar-phone-menu-sec {
     margin-top: 15px;
@@ -110,7 +118,7 @@ display: none;
     height: 30px;
     width: 150px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 30px;
     transition: all 0.5s ease-in-out;
@@ -122,17 +130,23 @@ display: none;
     height: 100px;
     width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 30px;
     transition: all 0.5s ease-in-out;
   }
-  .navbar-menu-items {
-    justify-content: center;
-    width: 90%;
+
+  .section1 {
+    height: 0px;
+    width: 0%;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
   }
-  .navbar-menu-data {
-    height: 45%;
-    width: 80px;
+
+  .section {
+    height: 30px;
+    width: 20%;
+    background-color: cyan;
+    transition: all 0.5s ease-in-out;
   }
 }
