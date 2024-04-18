@@ -3,6 +3,10 @@ import "./Navbar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
+  const [islandOn, setIslandOn] = useState(false);
+  const islandOnHandler = () => {
+    setIslandOn((prev) => !prev);
+  };
   return (
     <div>
       <div className="navbar-main">
@@ -50,9 +54,12 @@ const Navbar = () => {
               offset={-70}
               // duration={500}
             >
-              Contact 
+              Contact
             </Link>{" "}
           </ul>
+        </div>
+        <div className={islandOn==false?"navbar-phone-menu-sec":"navbar-island-menu-sec"} onClick={islandOnHandler}>
+          sdsdsd
         </div>
       </div>
     </div>
