@@ -140,10 +140,39 @@
   }
 
   .initial-island {
-    height: 0px;
-    width: 0%;
-    background-color: rgb(0, 0, 0);
+    height: 7px;
+    width: 7px;
+    background-color: rgb(29, 29, 29);
     transition: all 0.35s ease-in-out;
+    border-radius: 50%;
+    animation: initialanimation 1s linear infinite;
+  }
+  @keyframes initialanimation {
+    from {
+      background-color: rgb(29, 29, 29);
+    }
+    to {
+      background-color: rgb(59, 59, 59);
+    }
+  }
+  .initial-island:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .initial-island:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+
+  .initial-island:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .initial-island:nth-child(4) {
+    animation-delay: 0.45s;
+  }
+
+  .initial-island:nth-child(5) {
+    animation-delay: 0.6s;
   }
 
   .dynamic-island-section {

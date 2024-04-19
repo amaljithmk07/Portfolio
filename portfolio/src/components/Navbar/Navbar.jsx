@@ -136,6 +136,7 @@ const Navbar = () => {
               <div className="initial-island"></div>
               <div className="initial-island"></div>
               <div className="initial-island"></div>
+              <div className="initial-island"></div>
             </>
           )}
         </div>
