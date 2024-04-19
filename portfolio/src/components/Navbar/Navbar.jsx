@@ -66,68 +66,76 @@ const Navbar = () => {
         <div
           className={
             islandOn == false
-              ? "navbar-phone-menu-sec"
+              ? "navbar-islandoff-menu-sec"
               : "navbar-island-menu-sec"
           }
           onClick={islandOnHandler}
         >
           {islandOn == true ? (
             <>
-              <div className="section">
+              <div className="dynamic-island-section">
                 <Link
                   onClick={islandOffHandler}
                   activeClass="active"
+                  className="dynamic-island-link"
                   to="home-sec"
                   spy={true}
                   smooth={true}
                   offset={-70}
                 >
+                  <img src="/home.png" alt="" className="dynamic-logo" />
                   Home
                 </Link>
               </div>
-              <div className="section">
+              <div className="dynamic-island-section">
                 <Link
                   onClick={islandOffHandler}
                   activeClass="active"
+                  className="dynamic-island-link"
                   to="project-sec"
                   spy={true}
                   smooth={true}
                   offset={-70}
                 >
-                  Project
+                  <img src="/projects.png" alt="" className="dynamic-logo" />
+                  Projects
                 </Link>
               </div>
-              <div className="section">
+              <div className="dynamic-island-section">
                 <Link
                   onClick={islandOffHandler}
                   activeClass="active"
+                  className="dynamic-island-link"
                   to="skill-sec"
                   spy={true}
                   smooth={true}
                   offset={-70}
                 >
-                  skills
+                  <img src="/skills.png" alt="" className="dynamic-logo" />
+                  Skills
                 </Link>
               </div>
-              <div className="section">
+              <div className="dynamic-island-section">
                 <Link
                   onClick={islandOffHandler}
                   activeClass="active"
+                  className="dynamic-island-link"
                   to="contact-sec"
                   spy={true}
                   smooth={true}
                   offset={-70}
                 >
-                  Contact
+                  <img src="/contact.png" alt="" className="dynamic-logo" />
+                  Contacts
                 </Link>
               </div>
             </>
           ) : (
             <>
-              <div className="section1"></div>
-              <div className="section1"></div>
-              <div className="section1"></div>
-              <div className="section1"></div>
+              <div className="initial-island"></div>
+              <div className="initial-island"></div>
+              <div className="initial-island"></div>
+              <div className="initial-island"></div>
             </>
           )}
         </div>
