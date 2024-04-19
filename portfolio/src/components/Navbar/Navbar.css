@@ -164,7 +164,7 @@
     flex-direction: column;
     /* background-color: red; */
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     animation: textanimation 0.3s linear;
   }
   @keyframes textanimation {
