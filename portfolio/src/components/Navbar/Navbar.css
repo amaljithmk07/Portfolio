@@ -213,13 +213,13 @@
   }
 
   .dynamic-island-section:nth-child(2) {
-    animation-delay: 0.03s;
+    animation-delay: 0.05s;
   }
   .dynamic-island-section:nth-child(3) {
-    animation-delay: 0.06s;
+    animation-delay: 0.1s;
   }
   .dynamic-island-section:nth-child(4) {
-    animation-delay: 0.09s;
+    animation-delay: 0.15s;
   }
 
   .dynamic-logo {
