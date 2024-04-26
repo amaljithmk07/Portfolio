@@ -146,7 +146,7 @@
     background-color: rgb(0, 0, 0);
     height: 33px;
     width: 170px;
-    box-shadow: 0px 0px 12px rgba(54, 144, 255, 0.401);
+    box-shadow: 0px 0px 12px rgba(182, 215, 255);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -159,6 +159,7 @@
     background-color: rgb(0, 0, 0);
     height: 120px;
     width: 90%;
+    box-shadow: 0px 0px 12px rgba(182, 215, 255);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
