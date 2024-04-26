@@ -111,7 +111,16 @@ const Homepage = () => {
             <a href="https://github.com/amaljithmk07">
               <img src="/github.png" alt="" className="home-sec-sidebar-logo" />{" "}
             </a>
-          
+            <div onClick={() => dispatch(DarkmodeHandler())}>
+              <img
+                src={
+                  darkModeHandlerfunction == true
+                    ? "./darkmode.png"
+                    : "./lightmode.png "
+                }
+                className="darkmode-icon"
+              />
+            </div>{" "}
           </div>
           <div
             className={
