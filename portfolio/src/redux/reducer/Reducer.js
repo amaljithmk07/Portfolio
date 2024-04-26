@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const DarkmodeSlice = createSlice({
   name: "Darkmodestate",
   initialState: {
-    value: false,
+    value: true,
   },
   reducers: {
     DarkmodeHandler: (state, action) => {
