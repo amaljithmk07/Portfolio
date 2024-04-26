@@ -93,7 +93,7 @@ const Navbar = () => {
             </Link>{" "}
           </ul>
           {/* <div className="darkmode" onClick={() => dispatch(darkModeHandler())}> */}
-          <div className="darkmode" onClick={() => dispatch(DarkmodeHandler())}>
+          {/* <div className="darkmode" onClick={() => dispatch(DarkmodeHandler())}>
             
             <img
               src={
@@ -103,7 +103,7 @@ const Navbar = () => {
               }
               className="darkmode-icon"
             />
-          </div>{" "}
+          </div>{" "} */}
         </div>
 
         {/* //Dynamic island area */}

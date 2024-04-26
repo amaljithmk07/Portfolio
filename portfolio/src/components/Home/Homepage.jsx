@@ -93,34 +93,43 @@ const Homepage = () => {
         {/* //Home section */}
 
         <div className="home-sec" id="home-sec">
-          <div className="home-sec-side-bar">
-            <a href="https://www.instagram.com/__amaljit/?utm_source=qr&igsh=MW1nYXR4MXN0MzVyMg%3D%3D">
-              <img
-                src="/instagram.png"
-                alt=""
-                className="home-sec-sidebar-logo"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/amaljithmk">
-              <img
-                src="/linkedin.png"
-                alt=""
-                className="home-sec-sidebar-logo"
-              />{" "}
-            </a>
-            <a href="https://github.com/amaljithmk07">
-              <img src="/github.png" alt="" className="home-sec-sidebar-logo" />{" "}
-            </a>
-            <div onClick={() => dispatch(DarkmodeHandler())}>
-              <img
-                src={
-                  darkModeHandlerfunction == true
-                    ? "./darkmode.png"
-                    : "./lightmode.png "
-                }
-                className="darkmode-icon"
-              />
+          {/* //sidebar */}
+          <div className="home-sec-side-bar-sec">
+            <div className="home-sec-darkmode">
+              <div onClick={() => dispatch(DarkmodeHandler())}>
+                <img
+                  src={
+                    darkModeHandlerfunction == true
+                      ? "./darkmode.png"
+                      : "./lightmode.png "
+                  }
+                  className="darkmode-icon"
+                />
+              </div>{" "}
             </div>{" "}
+            <div className="home-sec-side-bar">
+              <a href="https://www.instagram.com/__amaljit/?utm_source=qr&igsh=MW1nYXR4MXN0MzVyMg%3D%3D">
+                <img
+                  src="/instagram.png"
+                  alt=""
+                  className="home-sec-sidebar-logo"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/amaljithmk">
+                <img
+                  src="/linkedin.png"
+                  alt=""
+                  className="home-sec-sidebar-logo"
+                />{" "}
+              </a>
+              <a href="https://github.com/amaljithmk07">
+                <img
+                  src="/github.png"
+                  alt=""
+                  className="home-sec-sidebar-logo"
+                />{" "}
+              </a>
+            </div>
           </div>
           <div
             className={

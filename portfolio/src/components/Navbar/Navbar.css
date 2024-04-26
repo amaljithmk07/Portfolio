@@ -72,22 +72,7 @@
   display: none;
 }
 
-/* //Dark mode  */
 
-.darkmode {
-  height: 30px;
-  width: 30px;
-  /* background-color: red; */
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.darkmode-icon {
-  height: 35px;
-  width: 35px;
-}
 @media screen and (max-width: 900px) {
   .navbar-menu-sec {
     width: 100%;
