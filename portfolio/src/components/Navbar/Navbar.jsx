@@ -2,19 +2,49 @@ import React, { forwardRef, useState } from "react";
 import "./Navbar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 
+import { useDispatch, useSelector } from "react-redux";
+import { DarkmodeHandler } from "../../redux/reducer/Reducer";
+
 const Navbar = () => {
+  //for Dynamic Island
   const [islandOn, setIslandOn] = useState(false);
+
   const islandOnHandler = () => {
     setIslandOn(true);
   };
+
+  //Dynamic Island Off
+
   const islandOffHandler = () => {
     setTimeout(() => {
       setIslandOn(false);
     }, 200);
   };
+
+  //for Dark mode
+
+  // const [darkmode, setDarkmode] = useState(false);
+
+  //Dynamic island On
+
+  //Dark Mode Handler
+
+  const dispatch = useDispatch();
+  const darkModeHandlerfunction = useSelector(
+    (state) => state.DarkmodeStore.value
+  );
+  console.log(darkModeHandlerfunction);
+
   return (
     <div>
-      <div className="navbar-main">
+      <div
+        className={
+          darkModeHandlerfunction == true
+            ? "navbar-main"
+            : " darkmode-navbar-main"
+        }
+        // className="navbar-main"
+      >
         <div className="navbar-menu-sec">
           <ul className="navbar-menu-items">
             <Link
@@ -62,7 +92,22 @@ const Navbar = () => {
               Contact
             </Link>{" "}
           </ul>
+          {/* <div className="darkmode" onClick={() => dispatch(darkModeHandler())}> */}
+          <div className="darkmode" onClick={() => dispatch(DarkmodeHandler())}>
+            
+            <img
+              src={
+                darkModeHandlerfunction == true
+                  ? "./darkmode.png"
+                  : "./lightmode.png "
+              }
+              className="darkmode-icon"
+            />
+          </div>{" "}
         </div>
+
+        {/* //Dynamic island area */}
+
         <div
           className={
             islandOn == false

@@ -3,6 +3,8 @@ import "./Homepage.css";
 import emailjs from "@emailjs/browser";
 import Loader from "./Loader";
 import toast, { Toaster } from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
+import { DarkmodeHandler } from "../../redux/reducer/Reducer";
 
 const Homepage = () => {
   const form = useRef();
@@ -70,10 +72,24 @@ const Homepage = () => {
       );
   };
 
+  //Redux area for Dark mode
+
+  const dispatch = useDispatch();
+  const darkModeHandlerfunction = useSelector(
+    (state) => state.DarkmodeStore.value
+  );
+  console.log(darkModeHandlerfunction);
   return (
     <div>
       <Toaster />
-      <div className="homepage-main">
+      {/* <div className="homepage-main"> */}
+      <div
+        className={
+          darkModeHandlerfunction == true
+            ? "homepage-main"
+            : "darkmode-homepage-main"
+        }
+      >
         {/* //Home section */}
 
         <div className="home-sec" id="home-sec">
@@ -95,8 +111,15 @@ const Homepage = () => {
             <a href="https://github.com/amaljithmk07">
               <img src="/github.png" alt="" className="home-sec-sidebar-logo" />{" "}
             </a>
+          
           </div>
-          <div className="home-sec-content seperate-background">
+          <div
+            className={
+              darkModeHandlerfunction == true
+                ? "home-sec-content seperate-background"
+                : "darkmode-home-sec-content  "
+            }
+          >
             <h1>Hello !</h1>
             <h1>I am Amaljith</h1>
             <p className="home-sec-content-p">
@@ -140,7 +163,15 @@ const Homepage = () => {
           </div>
           <div className="home-sec-content">
             <div className="home-sec-content-img-sec">
-              <img src="/robot-back.png" alt="" className="robot-back" />
+              <img
+                src={
+                  darkModeHandlerfunction == true
+                    ? "/robot-back.png"
+                    : "/robot-back-dark.png"
+                }
+                alt=""
+                className="robot-back"
+              />
               <img src="/robot.png" alt="" className="robot" />
             </div>{" "}
           </div>
@@ -149,11 +180,24 @@ const Homepage = () => {
         {/* //Project section */}
 
         <div className="project-sec">
-          <div className="project-title-sec" id="project-sec">
+          <div
+            className={
+              darkModeHandlerfunction == true
+                ? "project-title-sec"
+                : "darkmode-project-title-sec"
+            }
+            id="project-sec"
+          >
             {" "}
             {/* Personal Projects */}
             Personal Endeavors
-            <div className="project-title-underline"></div>
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "project-title-underline"
+                  : "darkmode-project-title-underline"
+              }
+            ></div>
           </div>
           <div className="project-content-sec">
             {/* //project card body */}
@@ -162,7 +206,13 @@ const Homepage = () => {
 
             <div className="project-card-main-body">
               <div className="project-card-sub-body">
-                <div className="project-card-body">
+                <div
+                  className={
+                    darkModeHandlerfunction == true
+                      ? "project-card-body"
+                      : "darkmode-project-card-body"
+                  }
+                >
                   <div className="project-card-img-sec">
                     <img
                       src="/medicalequip.jpg"
@@ -189,7 +239,11 @@ const Homepage = () => {
                         <img
                           src="/github.png"
                           alt=""
-                          className="project-logo "
+                          className={
+                            darkModeHandlerfunction == true
+                              ? "project-logo "
+                              : "darkmode-project-logo"
+                          }
                         />
                         <div class="project-logo-text">View on GitHub</div>
                       </a>
@@ -210,7 +264,13 @@ const Homepage = () => {
 
             <div className="project-card-main-body">
               <div className="project-card-sub-body">
-                <div className="project-card-body">
+                <div
+                  className={
+                    darkModeHandlerfunction == true
+                      ? "project-card-body"
+                      : "darkmode-project-card-body"
+                  }
+                >
                   <div className="project-card-img-sec">
                     <img src="/hemo.avif" alt="" className="project-card-img" />
                   </div>
@@ -230,7 +290,11 @@ const Homepage = () => {
                         <img
                           src="/github.png"
                           alt=""
-                          className="project-logo "
+                          className={
+                            darkModeHandlerfunction == true
+                              ? "project-logo "
+                              : "darkmode-project-logo"
+                          }
                         />
                         <div class="project-logo-text">View on GitHub</div>
                       </a>
@@ -251,7 +315,14 @@ const Homepage = () => {
 
             <div className="project-card-main-body">
               <div className="project-card-sub-body">
-                <div className="project-card-body">
+                <div
+                  className={
+                    darkModeHandlerfunction == true
+                      ? "project-card-body"
+                      : "darkmode-project-card-body"
+                  }
+                >
+                  {" "}
                   <div className="project-card-img-sec">
                     <img
                       src="/weatherhut.png"
@@ -274,7 +345,11 @@ const Homepage = () => {
                         <img
                           src="/github.png"
                           alt=""
-                          className="project-logo "
+                          className={
+                            darkModeHandlerfunction == true
+                              ? "project-logo "
+                              : "darkmode-project-logo"
+                          }
                         />
                         <div class="project-logo-text">View on GitHub</div>
                       </a>
@@ -295,7 +370,14 @@ const Homepage = () => {
 
             <div className="project-card-main-body">
               <div className="project-card-sub-body">
-                <div className="project-card-body">
+                <div
+                  className={
+                    darkModeHandlerfunction == true
+                      ? "project-card-body"
+                      : "darkmode-project-card-body"
+                  }
+                >
+                  {" "}
                   <div className="project-card-img-sec">
                     <img
                       src="/portfolio.jpg"
@@ -320,7 +402,11 @@ const Homepage = () => {
                         <img
                           src="/github.png"
                           alt=""
-                          className="project-logo "
+                          className={
+                            darkModeHandlerfunction == true
+                              ? "project-logo "
+                              : "darkmode-project-logo"
+                          }
                         />
                         <div class="project-logo-text">View on GitHub</div>
                       </a>
