@@ -446,60 +446,144 @@ const Homepage = () => {
         {/* //Skill section */}
 
         <div className="skill-sec" id="skill-sec">
-          <div className="skill-title-sec">
-            {" "}
-            Expertise <div className="skill-title-underline"></div>
+          <div
+            className={
+              darkModeHandlerfunction == true
+                ? "skill-title-sec"
+                : "darkmode-skill-title-sec"
+            }
+          >
+            Expertise
+            <div className="skill-title-underline"></div>
           </div>
           <div className="skill-card-sec">
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/react.png" alt="" className="skill-card-logo" />
               React
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/redux.png" alt="" className="skill-card-logo" />
               Redux
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/mongodb.png" alt="" className="skill-card-logo" />
               Mongo DB
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/node.png" alt="" className="skill-card-logo" />
               Node JS
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/express.png" alt="" className="skill-card-logo" />
               Express JS
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/postman.png" alt="" className="skill-card-logo" />
               Postman
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/rest-api.png" alt="" className="skill-card-logo" />
               REST API{" "}
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/jwt.png" alt="" className="skill-card-logo" />
               JWT
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/git.png" alt="" className="skill-card-logo" />
               Git
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/bootstrap.png" alt="" className="skill-card-logo" />
               Bootstrap
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/javascript.png" alt="" className="skill-card-logo" />
               Javascript
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/css.png" alt="" className="skill-card-logo" />
               CSS
             </div>
-            <div className="skill-card-body">
+            <div
+              className={
+                darkModeHandlerfunction == true
+                  ? "skill-card-body"
+                  : "darkmode-skill-card-body"
+              }
+            >
               <img src="/html.png" alt="" className="skill-card-logo" />
               HTML
             </div>
@@ -508,7 +592,13 @@ const Homepage = () => {
 
         {/* //contact section */}
 
-        <div className="contact-sec">
+        <div
+          className={
+            darkModeHandlerfunction == true
+              ? "contact-sec"
+              : "darkmode-contact-sec"
+          }
+        >
           <div className="contact-sec-left-body" id="contact-sec">
             <div className="contact-sec-title-1">
               {/* CONTACT US */}
@@ -579,24 +669,50 @@ const Homepage = () => {
         <div className="footer-sec">
           <div className="footer-sec-content">
             <a
-              className="footer-card-sec"
+              className={
+                darkModeHandlerfunction == true
+                  ? "footer-card-sec"
+                  : "darkmode-footer-card-sec"
+              }
               href="https://maps.app.goo.gl/ubY4SunqyHHi9hPq7"
             >
               <img src="/location.png" alt="" className="footer-icon" />
               Calicut,Kerala
             </a>
 
-            <a className="footer-card-sec" href="tel:8086171296">
+            <a
+              className={
+                darkModeHandlerfunction == true
+                  ? "footer-card-sec"
+                  : "darkmode-footer-card-sec"
+              }
+              href="tel:8086171296"
+            >
               <img src="/phone.png" alt="" className="footer-icon" />
               +91-(8086)171296
             </a>
 
-            <a className="footer-card-sec" href="mailto:amaljithmk44@gmail.com">
+            <a
+              className={
+                darkModeHandlerfunction == true
+                  ? "footer-card-sec"
+                  : "darkmode-footer-card-sec"
+              }
+              href="mailto:amaljithmk44@gmail.com"
+            >
               <img src="/email.png" alt="" className="footer-icon" />
               Amaljithmk44@gmail.com
             </a>
           </div>
-          <div className="footer-sec-data">© 2024 All Rights Reserved </div>
+          <div
+            className={
+              darkModeHandlerfunction == true
+                ? "footer-sec-data"
+                : "darkmode-footer-sec-data"
+            }
+          >
+            © 2024 All Rights Reserved{" "}
+          </div>
         </div>
       </div>
     </div>
