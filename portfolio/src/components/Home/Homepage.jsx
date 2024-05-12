@@ -5,6 +5,7 @@ import Loader from "./Loader";
 import toast, { Toaster } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { DarkmodeHandler } from "../../redux/reducer/Reducer";
+import { DynamicOffHandler } from "../../redux/reducer/Dynamic";
 
 const Homepage = () => {
   const form = useRef();
@@ -79,8 +80,15 @@ const Homepage = () => {
     (state) => state.DarkmodeStore.value
   );
   console.log(darkModeHandlerfunction);
+
   return (
-    <div>
+    <div
+      onClick={() =>
+        setTimeout(() => {
+          dispatch(DynamicOffHandler());
+        }, 200)
+      }
+    >
       <Toaster />
       {/* <div className="homepage-main"> */}
       <div

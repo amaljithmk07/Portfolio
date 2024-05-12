@@ -4,32 +4,31 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import { useDispatch, useSelector } from "react-redux";
 import { DarkmodeHandler } from "../../redux/reducer/Reducer";
+import { DynamicIslandHandler } from "../../redux/reducer/Dynamic";
 
 const Navbar = () => {
   //for Dynamic Island
-  const [islandOn, setIslandOn] = useState(false);
+  // const [islandOn, setIslandOn] = useState(false);
 
-  const islandOnHandler = () => {
-    setIslandOn(true);
-  };
+  // const islandOnHandler = () => {
+  //   setIslandOn(true);
+  // };
+
+  const dispatch = useDispatch();
+  const dynamicIslandHandlerFunction = useSelector(
+    (state) => state.DynamicIslandStore.value
+  );
 
   //Dynamic Island Off
 
-  const islandOffHandler = () => {
-    setTimeout(() => {
-      setIslandOn(false);
-    }, 200);
-  };
-
-  //for Dark mode
-
-  // const [darkmode, setDarkmode] = useState(false);
-
-  //Dynamic island On
+  // const islandOffHandler = () => {
+  //   setTimeout(() => {
+  //     setIslandOn(false);
+  //   }, 200);
+  // };
 
   //Dark Mode Handler
 
-  const dispatch = useDispatch();
   const darkModeHandlerfunction = useSelector(
     (state) => state.DarkmodeStore.value
   );
@@ -110,17 +109,22 @@ const Navbar = () => {
 
         <div
           className={
-            islandOn == false
+            // islandOn == false
+            dynamicIslandHandlerFunction == false
               ? "navbar-islandoff-menu-sec"
               : "navbar-island-menu-sec"
           }
-          onClick={islandOnHandler}
+          onClick={() => dispatch(DynamicIslandHandler())}
+          // onClick={islandOnHandler}
         >
-          {islandOn == true ? (
+          {/* {islandOn == true ? ( */}
+          {dynamicIslandHandlerFunction == true ? (
             <>
               <div className="dynamic-island-section">
                 <Link
-                  onClick={islandOffHandler}
+                  // onClick={islandOffHandler}
+
+                  onClick={() => dispatch(DynamicIslandHandler())}
                   activeClass="active"
                   className="dynamic-island-link"
                   to="home-sec"
@@ -134,7 +138,9 @@ const Navbar = () => {
               </div>
               <div className="dynamic-island-section">
                 <Link
-                  onClick={islandOffHandler}
+                  // onClick={islandOffHandler}
+
+                  onClick={() => dispatch(DynamicIslandHandler())}
                   activeClass="active"
                   className="dynamic-island-link"
                   to="project-sec"
@@ -148,7 +154,9 @@ const Navbar = () => {
               </div>
               <div className="dynamic-island-section">
                 <Link
-                  onClick={islandOffHandler}
+                  // onClick={islandOffHandler}
+
+                  onClick={() => dispatch(DynamicIslandHandler())}
                   activeClass="active"
                   className="dynamic-island-link"
                   to="skill-sec"
@@ -162,7 +170,9 @@ const Navbar = () => {
               </div>
               <div className="dynamic-island-section">
                 <Link
-                  onClick={islandOffHandler}
+                  // onClick={islandOffHandler}
+
+                  onClick={() => dispatch(DynamicIslandHandler())}
                   activeClass="active"
                   className="dynamic-island-link"
                   to="contact-sec"
