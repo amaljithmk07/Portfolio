@@ -155,16 +155,18 @@
   .initial-island {
     height: 7px;
     width: 7px;
-    background-color: rgb(29, 29, 29);
-    transition: all 0.35s ease-in-out;
+    background-color: rgb(162, 162, 162);
+    /* transition: all 0.35s ease-in-out; */
     border-radius: 50%;
     animation: initialanimation 2s linear infinite;
   }
   @keyframes initialanimation {
     from {
+      transition: all 0.35s ease-in-out;
       background-color: rgb(145, 145, 145);
     }
     to {
+      transition: all 0.35s ease-in-out;
       background-color: rgb(38, 38, 38);
       transform: scale(1.5);
     }
