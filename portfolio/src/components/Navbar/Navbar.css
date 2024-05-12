@@ -150,13 +150,13 @@
     align-items: center;
     border-radius: 20px;
     transition: all 0.35s ease-in-out;
+    overflow: hidden;
   }
 
   .initial-island {
     height: 7px;
     width: 7px;
     background-color: rgb(162, 162, 162);
-    /* transition: all 0.35s ease-in-out; */
     border-radius: 50%;
     animation: initialanimation 2s linear infinite;
   }
@@ -199,7 +199,6 @@
     justify-content: center;
     align-items: center;
     transition: all 0.35s ease-in-out;
-    /* animation: textanimation 0.3s linear; */
     animation: textanimation 0.3s linear;
   }
   .dynamic-island-link {
