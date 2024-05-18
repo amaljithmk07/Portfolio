@@ -6,6 +6,8 @@ import toast, { Toaster } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { DarkmodeHandler } from "../../redux/reducer/Reducer";
 import { DynamicOffHandler } from "../../redux/reducer/Dynamic";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const Homepage = () => {
   const form = useRef();
@@ -80,6 +82,12 @@ const Homepage = () => {
     (state) => state.DarkmodeStore.value
   );
   console.log(darkModeHandlerfunction);
+
+  ///useEffect for Aos
+
+  useEffect(() => {
+    AOS.init();
+  }, {});
 
   return (
     <div
@@ -213,6 +221,7 @@ const Homepage = () => {
                 : "darkmode-project-title-sec"
             }
             id="project-sec"
+            data-aos="fade-up"
           >
             {" "}
             {/* Personal Projects */}
@@ -230,7 +239,7 @@ const Homepage = () => {
 
             {/* //medicalequipment */}
 
-            <div className="project-card-main-body">
+            <div className="project-card-main-body" data-aos="fade-up">
               <div className="project-card-sub-body">
                 <div
                   className={
@@ -288,7 +297,7 @@ const Homepage = () => {
 
             {/* //Hemoglobe */}
 
-            <div className="project-card-main-body">
+            <div className="project-card-main-body" data-aos="fade-up">
               <div className="project-card-sub-body">
                 <div
                   className={
@@ -339,7 +348,7 @@ const Homepage = () => {
 
             {/* //Weather Hut */}
 
-            <div className="project-card-main-body">
+            <div className="project-card-main-body" data-aos="fade-up">
               <div className="project-card-sub-body">
                 <div
                   className={
@@ -394,7 +403,7 @@ const Homepage = () => {
 
             {/* //Personal Portfolio */}
 
-            <div className="project-card-main-body">
+            <div className="project-card-main-body" data-aos="fade-up">
               <div className="project-card-sub-body">
                 <div
                   className={
@@ -460,6 +469,7 @@ const Homepage = () => {
                 ? "skill-title-sec"
                 : "darkmode-skill-title-sec"
             }
+            data-aos="fade-up"
           >
             Expertise
             <div className="skill-title-underline"></div>
@@ -471,6 +481,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/react.png" alt="" className="skill-card-logo" />
               React
@@ -481,6 +492,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/redux.png" alt="" className="skill-card-logo" />
               Redux
@@ -491,6 +503,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/mongodb.png" alt="" className="skill-card-logo" />
               Mongo DB
@@ -501,6 +514,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/node.png" alt="" className="skill-card-logo" />
               Node JS
@@ -511,6 +525,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/express.png" alt="" className="skill-card-logo" />
               Express JS
@@ -521,6 +536,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/postman.png" alt="" className="skill-card-logo" />
               Postman
@@ -531,6 +547,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/rest-api.png" alt="" className="skill-card-logo" />
               REST API{" "}
@@ -541,6 +558,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/jwt.png" alt="" className="skill-card-logo" />
               JWT
@@ -551,6 +569,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/git.png" alt="" className="skill-card-logo" />
               Git
@@ -561,6 +580,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/bootstrap.png" alt="" className="skill-card-logo" />
               Bootstrap
@@ -571,6 +591,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/javascript.png" alt="" className="skill-card-logo" />
               Javascript
@@ -581,6 +602,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/css.png" alt="" className="skill-card-logo" />
               CSS
@@ -591,6 +613,7 @@ const Homepage = () => {
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
+              data-aos="fade-up"
             >
               <img src="/html.png" alt="" className="skill-card-logo" />
               HTML
@@ -608,17 +631,23 @@ const Homepage = () => {
           }
         >
           <div className="contact-sec-left-body" id="contact-sec">
-            <div className="contact-sec-title-1">
+            <div className="contact-sec-title-1" data-aos="fade-up">
               {/* CONTACT US */}
               CONNECT ME{" "}
             </div>
-            <div className="contact-sec-title-2">
+            <div className="contact-sec-title-2" data-aos="fade-up">
               {" "}
               Let's talk <br /> about you
             </div>
           </div>
           <div className="contact-sec-right-body">
-            <form action="" className="form-sec" ref={form} name="myForm">
+            <form
+              action=""
+              className="form-sec"
+              ref={form}
+              name="myForm"
+              data-aos="fade-up"
+            >
               <div className="form-title"> Send me a Message</div>
               <div className="form-input-field-sec">
                 Full Name
@@ -682,6 +711,7 @@ const Homepage = () => {
                   ? "footer-card-sec"
                   : "darkmode-footer-card-sec"
               }
+              data-aos="fade-up"
               href="https://maps.app.goo.gl/ubY4SunqyHHi9hPq7"
             >
               <img src="/location.png" alt="" className="footer-icon" />
@@ -694,6 +724,7 @@ const Homepage = () => {
                   ? "footer-card-sec"
                   : "darkmode-footer-card-sec"
               }
+              data-aos="fade-up"
               href="tel:8086171296"
             >
               <img src="/phone.png" alt="" className="footer-icon" />
@@ -706,6 +737,7 @@ const Homepage = () => {
                   ? "footer-card-sec"
                   : "darkmode-footer-card-sec"
               }
+              data-aos="fade-up"
               href="mailto:amaljithmk44@gmail.com"
             >
               <img src="/email.png" alt="" className="footer-icon" />

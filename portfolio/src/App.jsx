@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Homepage from "./components/Home/Homepage";
 import Navbar from "./components/Navbar/Navbar";
+import Loader from "./components/Home/Loader";
 
 function App() {
   const [count, setCount] = useState(0);

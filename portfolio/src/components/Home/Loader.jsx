@@ -1,12 +1,14 @@
-import React from 'react'
-import './Loader.css'
+import React from "react";
+import "./Loader.css";
 
 const Loader = () => {
   return (
     <div>
-        <div className="loader"></div>
-    </div>
-  )
-}
+      <div className="loader"></div>
 
-export default Loader
+      {/* //Loader for form submission */}
+    </div>
+  );
+};
+
+export default Loader;
