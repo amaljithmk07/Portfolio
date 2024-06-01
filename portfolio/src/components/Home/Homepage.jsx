@@ -474,14 +474,16 @@ const Homepage = () => {
             Expertise
             <div className="skill-title-underline"></div>
           </div>
-          <div className="skill-card-sec">
+          <div className="skill-card-sec"
+          
+          data-aos="fade-up"
+          >
             <div
               className={
                 darkModeHandlerfunction == true
                   ? "skill-card-body"
                   : "darkmode-skill-card-body"
               }
-              data-aos="fade-up"
             >
               <img src="/react.png" alt="" className="skill-card-logo" />
               React
