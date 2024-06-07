@@ -124,21 +124,24 @@ const Homepage = () => {
               </div>{" "}
             </div>{" "}
             <div className="home-sec-side-bar">
-              <a href="https://www.instagram.com/__amaljit/?utm_source=qr&igsh=MW1nYXR4MXN0MzVyMg%3D%3D">
+              <a
+                href="https://www.instagram.com/__amaljit/?utm_source=qr&igsh=MW1nYXR4MXN0MzVyMg%3D%3D"
+                target="_blank"
+              >
                 <img
                   src="/instagram.png"
                   alt=""
                   className="home-sec-sidebar-logo"
                 />
               </a>
-              <a href="https://www.linkedin.com/in/amaljithmk">
+              <a href="https://www.linkedin.com/in/amaljithmk" target="_blank">
                 <img
                   src="/linkedin.png"
                   alt=""
                   className="home-sec-sidebar-logo"
                 />{" "}
               </a>
-              <a href="https://github.com/amaljithmk07">
+              <a href="https://github.com/amaljithmk07" target="_blank">
                 <img
                   src="/github.png"
                   alt=""
@@ -184,12 +187,14 @@ const Homepage = () => {
               <a
                 href="https://github.com/amaljithmk07"
                 className="home-sec-socialmedia-btn"
+                target="_blank"
               >
                 <img src="/github.png" alt="" className="home-sec-btn-icon" />
               </a>
               <a
                 href="https://www.linkedin.com/in/amaljithmk/"
                 className="home-sec-socialmedia-btn"
+                target="_blank"
               >
                 <img src="/linkedin.png" alt="" className="home-sec-btn-icon" />
               </a>
@@ -210,6 +215,8 @@ const Homepage = () => {
             </div>{" "}
           </div>
         </div>
+
+        {/* //////////////////////////////////////// */}
 
         {/* //Project section */}
 
@@ -270,6 +277,7 @@ const Homepage = () => {
                       <a
                         href="https://github.com/amaljithmk07/Med.Equip-MERN"
                         className="project-github-btn"
+                        target="_blank"
                       >
                         <img
                           src="/github.png"
@@ -285,6 +293,7 @@ const Homepage = () => {
                       <a
                         href="http://medicalequipment.vercel.app"
                         className="project-btn"
+                        target="_blank"
                       >
                         Go to web
                         <img src="/web.png" alt="" className="project-logo" />
@@ -321,6 +330,7 @@ const Homepage = () => {
                       <a
                         href="https://github.com/amaljithmk07/Hemoglobe-MERN"
                         className="project-github-btn"
+                        target="_blank"
                       >
                         <img
                           src="/github.png"
@@ -336,6 +346,7 @@ const Homepage = () => {
                       <a
                         href="http://hemoglobe.vercel.app"
                         className="project-btn"
+                        target="_blank"
                       >
                         Go to web
                         <img src="/web.png" alt="" className="project-logo" />
@@ -376,6 +387,7 @@ const Homepage = () => {
                       <a
                         href="https://github.com/amaljithmk07/WeatherHut"
                         className="project-github-btn"
+                        target="_blank"
                       >
                         <img
                           src="/github.png"
@@ -391,6 +403,7 @@ const Homepage = () => {
                       <a
                         href="http://weatherhut.vercel.app"
                         className="project-btn"
+                        target="_blank"
                       >
                         Go to web
                         <img src="/web.png" alt="" className="project-logo" />
@@ -433,6 +446,7 @@ const Homepage = () => {
                       <a
                         href="https://github.com/amaljithmk07/Portfolio"
                         className="project-github-btn"
+                        target="_blank"
                       >
                         <img
                           src="/github.png"
@@ -448,6 +462,67 @@ const Homepage = () => {
                       <a
                         href="http://amaljithmk.vercel.app"
                         className="project-btn"
+                        target="_blank"
+                      >
+                        Go to web
+                        <img src="/web.png" alt="" className="project-logo" />
+                      </a>{" "}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* //Whatsapp Clone */}
+
+            <div className="project-card-main-body" data-aos="fade-up">
+              <div className="project-card-sub-body">
+                <div
+                  className={
+                    darkModeHandlerfunction == true
+                      ? "project-card-body"
+                      : "darkmode-project-card-body"
+                  }
+                >
+                  {" "}
+                  <div className="project-card-img-sec">
+                    <img
+                      src="/whatsapp.png"
+                      alt=""
+                      className="project-card-img"
+                    />
+                  </div>
+                  <div className="project-card-content-sec">
+                    <div className="project-card-project-title">
+                      WhatsApp Clone
+                    </div>
+                    <div className="project-card-project-details">
+                      This application will allow users to send messages through
+                      the platform, replicating the core functionality of the
+                      original WhatsApp Web.
+                    </div>
+                    <div className="project-card-project-logo-sec">
+                      <a
+                        href="https://github.com/amaljithmk07/Whatsapp"
+                        className="project-github-btn"
+                        target="_blank"
+                      >
+                        <img
+                          src="/github.png"
+                          alt=""
+                          className={
+                            darkModeHandlerfunction == true
+                              ? "project-logo "
+                              : "darkmode-project-logo"
+                          }
+                        />
+                        <div class="project-logo-text">View on GitHub</div>
+                      </a>
+                      <a
+                        href="http://whatsapp-mini.vercel.app"
+                        className="project-btn"
+                        target="_blank"
+
                       >
                         Go to web
                         <img src="/web.png" alt="" className="project-logo" />
@@ -459,6 +534,8 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+
+        {/* ///////////////////////////////// */}
 
         {/* //Skill section */}
 
@@ -474,10 +551,7 @@ const Homepage = () => {
             Expertise
             <div className="skill-title-underline"></div>
           </div>
-          <div className="skill-card-sec"
-          
-          data-aos="fade-up"
-          >
+          <div className="skill-card-sec" data-aos="fade-up">
             <div
               className={
                 darkModeHandlerfunction == true
@@ -715,6 +789,7 @@ const Homepage = () => {
               }
               data-aos="fade-up"
               href="https://maps.app.goo.gl/ubY4SunqyHHi9hPq7"
+              target="_blank"
             >
               <img src="/location.png" alt="" className="footer-icon" />
               Calicut,Kerala
@@ -728,6 +803,7 @@ const Homepage = () => {
               }
               data-aos="fade-up"
               href="tel:8086171296"
+              target="_blank"
             >
               <img src="/phone.png" alt="" className="footer-icon" />
               +91-(8086)171296
@@ -741,6 +817,7 @@ const Homepage = () => {
               }
               data-aos="fade-up"
               href="mailto:amaljithmk44@gmail.com"
+              target="_blank"
             >
               <img src="/email.png" alt="" className="footer-icon" />
               Amaljithmk44@gmail.com
