@@ -841,7 +841,7 @@
 
   /* ///Show more sec */
   .showmore-sec {
-    width: 140px;
+    width: 130px;
     height: 40px;
     display: flex;
     justify-content: start;
@@ -864,6 +864,7 @@
     position: unset;
     transform: unset;
     opacity: 1;
+    font-size: .9rem;
     color: rgb(0, 0, 0);
   }
 
