@@ -504,10 +504,11 @@ const Homepage = () => {
                           This application will allow users to send messages
                           through the platform, replicating the core
                           functionality of the original WhatsApp Web.
+                          (In progress)
                         </div>
                         <div className="project-card-project-logo-sec">
                           <a
-                            href="https://github.com/amaljithmk07/Whatsapp"
+                            href="https://github.com/amaljithmk07/FrameFinder"
                             className="project-github-btn"
                             target="_blank"
                           >
@@ -523,7 +524,7 @@ const Homepage = () => {
                             <div class="project-logo-text">View on GitHub</div>
                           </a>
                           <a
-                            href="http://whatsapp-mini.vercel.app"
+                            href="http://framefinder.vercel.app"
                             className="project-btn"
                             target="_blank"
                           >
@@ -566,6 +567,8 @@ const Homepage = () => {
                           This application will allow users to send messages
                           through the platform, replicating the core
                           functionality of the original WhatsApp Web.
+                          (In progress)
+
                         </div>
                         <div className="project-card-project-logo-sec">
                           <a
@@ -609,9 +612,9 @@ const Homepage = () => {
           <div
             className="showmore-sec"
             onClick={() => setShowmore((prev) => !prev)}
-            >
+          >
             <img
-            // data-aos="fade-up"
+              // data-aos="fade-up"
               src="showmore.png"
               className={showMore == false ? "showmore-icon" : "lessmore-icon"}
               // onClick={() => setShowmore((prev) => !prev)}

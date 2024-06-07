@@ -857,6 +857,8 @@
     width: 30px;
     /* padding: 10px; */
     border-radius: 50px;
+    /* background-color: rgb(251, 251, 251); */
+
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
@@ -864,7 +866,7 @@
     position: unset;
     transform: unset;
     opacity: 1;
-    font-size: .9rem;
+    font-size: 0.9rem;
     color: rgb(0, 0, 0);
   }
 
