@@ -611,7 +611,7 @@ const Homepage = () => {
             onClick={() => setShowmore((prev) => !prev)}
             >
             <img
-            data-aos="fade-up"
+            // data-aos="fade-up"
               src="showmore.png"
               className={showMore == false ? "showmore-icon" : "lessmore-icon"}
               onClick={() => setShowmore((prev) => !prev)}
