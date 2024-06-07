@@ -12,7 +12,7 @@ import AOS from "aos";
 const Homepage = () => {
   const form = useRef();
 
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(false); //Loader for Email send Button
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -88,6 +88,8 @@ const Homepage = () => {
   useEffect(() => {
     AOS.init();
   }, {});
+
+  const [showMore, setShowmore] = useState(false); //For Show more button
 
   return (
     <div
@@ -473,64 +475,149 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* //Whatsapp Clone */}
+            {showMore == true ? (
+              <>
+                {/* //Frame Finder */}
 
-            <div className="project-card-main-body" data-aos="fade-up">
-              <div className="project-card-sub-body">
-                <div
-                  className={
-                    darkModeHandlerfunction == true
-                      ? "project-card-body"
-                      : "darkmode-project-card-body"
-                  }
-                >
-                  {" "}
-                  <div className="project-card-img-sec">
-                    <img
-                      src="/whatsapp.png"
-                      alt=""
-                      className="project-card-img"
-                    />
-                  </div>
-                  <div className="project-card-content-sec">
-                    <div className="project-card-project-title">
-                      WhatsApp Clone
-                    </div>
-                    <div className="project-card-project-details">
-                      This application will allow users to send messages through
-                      the platform, replicating the core functionality of the
-                      original WhatsApp Web.
-                    </div>
-                    <div className="project-card-project-logo-sec">
-                      <a
-                        href="https://github.com/amaljithmk07/Whatsapp"
-                        className="project-github-btn"
-                        target="_blank"
-                      >
+                <div className="project-card-main-body" data-aos="fade-up">
+                  <div className="project-card-sub-body">
+                    <div
+                      className={
+                        darkModeHandlerfunction == true
+                          ? "project-card-body"
+                          : "darkmode-project-card-body"
+                      }
+                    >
+                      {" "}
+                      <div className="project-card-img-sec">
                         <img
-                          src="/github.png"
+                          src="/framefinder.jpg"
                           alt=""
-                          className={
-                            darkModeHandlerfunction == true
-                              ? "project-logo "
-                              : "darkmode-project-logo"
-                          }
+                          className="project-card-img"
                         />
-                        <div class="project-logo-text">View on GitHub</div>
-                      </a>
-                      <a
-                        href="http://whatsapp-mini.vercel.app"
-                        className="project-btn"
-                        target="_blank"
-
-                      >
-                        Go to web
-                        <img src="/web.png" alt="" className="project-logo" />
-                      </a>{" "}
+                      </div>
+                      <div className="project-card-content-sec">
+                        <div className="project-card-project-title">
+                          Frame Finder
+                        </div>
+                        <div className="project-card-project-details">
+                          This application will allow users to send messages
+                          through the platform, replicating the core
+                          functionality of the original WhatsApp Web.
+                        </div>
+                        <div className="project-card-project-logo-sec">
+                          <a
+                            href="https://github.com/amaljithmk07/Whatsapp"
+                            className="project-github-btn"
+                            target="_blank"
+                          >
+                            <img
+                              src="/github.png"
+                              alt=""
+                              className={
+                                darkModeHandlerfunction == true
+                                  ? "project-logo "
+                                  : "darkmode-project-logo"
+                              }
+                            />
+                            <div class="project-logo-text">View on GitHub</div>
+                          </a>
+                          <a
+                            href="http://whatsapp-mini.vercel.app"
+                            className="project-btn"
+                            target="_blank"
+                          >
+                            Go to web
+                            <img
+                              src="/web.png"
+                              alt=""
+                              className="project-logo"
+                            />
+                          </a>{" "}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                {/* //Whatsapp Clone */}
+
+                <div className="project-card-main-body" data-aos="fade-up">
+                  <div className="project-card-sub-body">
+                    <div
+                      className={
+                        darkModeHandlerfunction == true
+                          ? "project-card-body"
+                          : "darkmode-project-card-body"
+                      }
+                    >
+                      {" "}
+                      <div className="project-card-img-sec">
+                        <img
+                          src="/whatsapp.png"
+                          alt=""
+                          className="project-card-img"
+                        />
+                      </div>
+                      <div className="project-card-content-sec">
+                        <div className="project-card-project-title">
+                          WhatsApp Clone
+                        </div>
+                        <div className="project-card-project-details">
+                          This application will allow users to send messages
+                          through the platform, replicating the core
+                          functionality of the original WhatsApp Web.
+                        </div>
+                        <div className="project-card-project-logo-sec">
+                          <a
+                            href="https://github.com/amaljithmk07/Whatsapp"
+                            className="project-github-btn"
+                            target="_blank"
+                          >
+                            <img
+                              src="/github.png"
+                              alt=""
+                              className={
+                                darkModeHandlerfunction == true
+                                  ? "project-logo "
+                                  : "darkmode-project-logo"
+                              }
+                            />
+                            <div class="project-logo-text">View on GitHub</div>
+                          </a>
+                          <a
+                            href="http://whatsapp-mini.vercel.app"
+                            className="project-btn"
+                            target="_blank"
+                          >
+                            Go to web
+                            <img
+                              src="/web.png"
+                              alt=""
+                              className="project-logo"
+                            />
+                          </a>{" "}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <></>
+            )}
+          </div>
+          <div
+            className="showmore-sec"
+            onClick={() => setShowmore((prev) => !prev)}
+            >
+            <img
+            data-aos="fade-up"
+              src="showmore.png"
+              className={showMore == false ? "showmore-icon" : "lessmore-icon"}
+              onClick={() => setShowmore((prev) => !prev)}
+            />
+            <div className="showmore-text">
+              {showMore == false ? "Show more" : "Less more"}
             </div>
           </div>
         </div>
