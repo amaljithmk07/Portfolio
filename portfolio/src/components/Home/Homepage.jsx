@@ -501,10 +501,9 @@ const Homepage = () => {
                           Frame Finder
                         </div>
                         <div className="project-card-project-details">
-                          This application will allow users to send messages
-                          through the platform, replicating the core
-                          functionality of the original WhatsApp Web.
-                          (In progress)
+                          This is a dynamic application where users can book
+                          photographers, review their photos, and communicate
+                          with each other. (In progress)
                         </div>
                         <div className="project-card-project-logo-sec">
                           <a
@@ -566,9 +565,8 @@ const Homepage = () => {
                         <div className="project-card-project-details">
                           This application will allow users to send messages
                           through the platform, replicating the core
-                          functionality of the original WhatsApp Web.
-                          (In progress)
-
+                          functionality of the original WhatsApp Web. (In
+                          progress)
                         </div>
                         <div className="project-card-project-logo-sec">
                           <a
@@ -893,7 +891,6 @@ const Homepage = () => {
               }
               data-aos="fade-up"
               href="tel:8086171296"
-              target="_blank"
             >
               <img src="/phone.png" alt="" className="footer-icon" />
               +91-(8086)171296
@@ -907,7 +904,6 @@ const Homepage = () => {
               }
               data-aos="fade-up"
               href="mailto:amaljithmk44@gmail.com"
-              target="_blank"
             >
               <img src="/email.png" alt="" className="footer-icon" />
               Amaljithmk44@gmail.com
