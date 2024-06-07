@@ -841,7 +841,7 @@
 
   /* ///Show more sec */
   .showmore-sec {
-    width: 130px;
+    width: 140px;
     height: 40px;
     display: flex;
     justify-content: start;
@@ -869,7 +869,7 @@
   }
 
   .showmore-sec:hover {
-    width: 130px;
+    width: 140px;
     background-color: rgb(241, 241, 241);
   }
   .showmore-sec:hover .showmore-text {
