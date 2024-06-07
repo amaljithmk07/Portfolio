@@ -478,21 +478,6 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.showmore-text {
-  position: absolute;
-  transform: translate(-80%, 70%);
-  opacity: 0;
-  right: 0;
-  color: rgb(0, 0, 0);
-}
-.showmore-sec:hover {
-  width: 140px;
-  background-color: rgb(241, 241, 241);
-}
-.showmore-sec:hover .showmore-text {
-  transform: translate(-18%, 70%);
-  opacity: 1;
-}
 .showmore-icon,
 .lessmore-icon {
   z-index: 1;
@@ -508,6 +493,21 @@
 }
 .lessmore-icon {
   transform: rotate(180deg);
+}
+.showmore-text {
+  position: absolute;
+  transform: translate(-80%, 70%);
+  opacity: 0;
+  right: 0;
+  color: rgb(0, 0, 0);
+}
+.showmore-sec:hover {
+  width: 140px;
+  background-color: rgb(241, 241, 241);
+}
+.showmore-sec:hover .showmore-text {
+  transform: translate(-18%, 70%);
+  opacity: 1;
 }
 
 /* //Skill section */
@@ -837,6 +837,44 @@
     max-height: 300px;
     max-width: 300px;
   }
+
+  /* ///Show more sec */
+  .showmore-sec {
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: unset;
+    background-color: rgb(241, 241, 241);
+  }
+  .showmore-icon,
+  .lessmore-icon {
+    z-index: 1;
+    position: unset;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .showmore-text {
+    position: unset;
+    transform: unset;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+  }
+
+  .showmore-sec:hover {
+    width: 140px;
+    background-color: rgb(241, 241, 241);
+  }
+  .showmore-sec:hover .showmore-text {
+    transform: unset;
+  }
+
+  /* //////////// */
   .skill-card-body,
   .darkmode-skill-card-body {
     height: 120px;
