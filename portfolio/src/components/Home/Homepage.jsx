@@ -359,7 +359,7 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* //Weather Hut */}
+            {/* //Frame Finder */}
 
             <div className="project-card-main-body" data-aos="fade-up">
               <div className="project-card-sub-body">
@@ -373,21 +373,23 @@ const Homepage = () => {
                   {" "}
                   <div className="project-card-img-sec">
                     <img
-                      src="/weatherhut.png"
+                      src="/framefinder.jpg"
                       alt=""
                       className="project-card-img"
                     />
                   </div>
                   <div className="project-card-content-sec">
-                    <div className="project-card-project-title">WeatherHut</div>
+                    <div className="project-card-project-title">
+                      Frame Finder
+                    </div>
                     <div className="project-card-project-details">
-                      WeatherHut displays real-time weather for your current
-                      location and lets you search and save weather details for
-                      specific regions when signed in.
+                      This is a dynamic application where users can book
+                      photographers, review their photos, and communicate with
+                      each other. (In progress)
                     </div>
                     <div className="project-card-project-logo-sec">
                       <a
-                        href="https://github.com/amaljithmk07/WeatherHut"
+                        href="https://github.com/amaljithmk07/FrameFinder"
                         className="project-github-btn"
                         target="_blank"
                       >
@@ -403,7 +405,7 @@ const Homepage = () => {
                         <div class="project-logo-text">View on GitHub</div>
                       </a>
                       <a
-                        href="http://weatherhut.vercel.app"
+                        href="http://framefinder.vercel.app"
                         className="project-btn"
                         target="_blank"
                       >
@@ -416,7 +418,7 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* //Personal Portfolio */}
+            {/* //Bloogie */}
 
             <div className="project-card-main-body" data-aos="fade-up">
               <div className="project-card-sub-body">
@@ -430,23 +432,23 @@ const Homepage = () => {
                   {" "}
                   <div className="project-card-img-sec">
                     <img
-                      src="/portfolio.jpg"
+                      src="/bloogie.png"
                       alt=""
                       className="project-card-img"
+                      style={{ width: "70%" }}
                     />
                   </div>
                   <div className="project-card-content-sec">
-                    <div className="project-card-project-title">
-                      Personal Portfolio
-                    </div>
+                    <div className="project-card-project-title">Bloogie</div>
                     <div className="project-card-project-details">
-                      Interactive web application displaying extensive
-                      information about my professional portfolio, encompassing
-                      expertise, key projects, and contact details.
+                      Bloogie is a dynamic web application that allows users to
+                      register, log in, and upload their blogs. Users can view
+                      blogs posted by others, as well as edit their own blog
+                      entries. (In progress)
                     </div>
                     <div className="project-card-project-logo-sec">
                       <a
-                        href="https://github.com/amaljithmk07/Portfolio"
+                        href="https://github.com/amaljithmk07/Bloogie"
                         className="project-github-btn"
                         target="_blank"
                       >
@@ -462,7 +464,7 @@ const Homepage = () => {
                         <div class="project-logo-text">View on GitHub</div>
                       </a>
                       <a
-                        href="http://amaljithmk.vercel.app"
+                        href="http://bloogie.vercel.app"
                         className="project-btn"
                         target="_blank"
                       >
@@ -477,7 +479,7 @@ const Homepage = () => {
 
             {showMore == true ? (
               <>
-                {/* //Frame Finder */}
+                {/* //Weather Hut */}
 
                 <div className="project-card-main-body" data-aos="fade-up">
                   <div className="project-card-sub-body">
@@ -491,23 +493,23 @@ const Homepage = () => {
                       {" "}
                       <div className="project-card-img-sec">
                         <img
-                          src="/framefinder.jpg"
+                          src="/weatherhut.png"
                           alt=""
                           className="project-card-img"
                         />
                       </div>
                       <div className="project-card-content-sec">
                         <div className="project-card-project-title">
-                          Frame Finder
+                          WeatherHut
                         </div>
                         <div className="project-card-project-details">
-                          This is a dynamic application where users can book
-                          photographers, review their photos, and communicate
-                          with each other. (In progress)
+                          WeatherHut displays real-time weather for your current
+                          location and lets you search and save weather details
+                          for specific regions when signed in.
                         </div>
                         <div className="project-card-project-logo-sec">
                           <a
-                            href="https://github.com/amaljithmk07/FrameFinder"
+                            href="https://github.com/amaljithmk07/WeatherHut"
                             className="project-github-btn"
                             target="_blank"
                           >
@@ -523,7 +525,7 @@ const Homepage = () => {
                             <div class="project-logo-text">View on GitHub</div>
                           </a>
                           <a
-                            href="http://framefinder.vercel.app"
+                            href="http://weatherhut.vercel.app"
                             className="project-btn"
                             target="_blank"
                           >
@@ -539,6 +541,8 @@ const Homepage = () => {
                     </div>
                   </div>
                 </div>
+
+               
                 {/* //Whatsapp Clone */}
 
                 <div className="project-card-main-body" data-aos="fade-up">
@@ -587,6 +591,71 @@ const Homepage = () => {
                           </a>
                           <a
                             href="http://whatsapp-mini.vercel.app"
+                            className="project-btn"
+                            target="_blank"
+                          >
+                            Go to web
+                            <img
+                              src="/web.png"
+                              alt=""
+                              className="project-logo"
+                            />
+                          </a>{" "}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                 {/* //Personal Portfolio */}
+
+                 <div className="project-card-main-body" data-aos="fade-up">
+                  <div className="project-card-sub-body">
+                    <div
+                      className={
+                        darkModeHandlerfunction == true
+                          ? "project-card-body"
+                          : "darkmode-project-card-body"
+                      }
+                    >
+                      {" "}
+                      <div className="project-card-img-sec">
+                        <img
+                          src="/portfolio.jpg"
+                          alt=""
+                          className="project-card-img"
+                        />
+                      </div>
+                      <div className="project-card-content-sec">
+                        <div className="project-card-project-title">
+                          Personal Portfolio
+                        </div>
+                        <div className="project-card-project-details">
+                          Interactive web application displaying extensive
+                          information about my professional portfolio,
+                          encompassing expertise, key projects, and contact
+                          details.
+                        </div>
+                        <div className="project-card-project-logo-sec">
+                          <a
+                            href="https://github.com/amaljithmk07/Portfolio"
+                            className="project-github-btn"
+                            target="_blank"
+                          >
+                            <img
+                              src="/github.png"
+                              alt=""
+                              className={
+                                darkModeHandlerfunction == true
+                                  ? "project-logo "
+                                  : "darkmode-project-logo"
+                              }
+                            />
+                            <div class="project-logo-text">View on GitHub</div>
+                          </a>
+                          <a
+                            href="http://amaljithmk.vercel.app"
                             className="project-btn"
                             target="_blank"
                           >
