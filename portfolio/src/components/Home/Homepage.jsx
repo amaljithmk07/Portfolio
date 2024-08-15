@@ -110,7 +110,21 @@ const Homepage = () => {
       >
         {/* //Home section */}
 
-        <div className="home-sec" id="home-sec">
+        <div
+          className="new-back-img"
+          style={
+            darkModeHandlerfunction == false
+              ? {
+                  background:
+                    "#000000 url(/home-new-back.png) no-repeat center/cover",
+                }
+              : {
+                  background:
+                    "#000000 url(/home-new-back1.png) no-repeat center/cover",
+                }
+          }
+        ></div>
+        <div className="home-sec " id="home-sec">
           {/* //sidebar */}
           <div className="home-sec-side-bar-sec">
             <div className="home-sec-darkmode">
@@ -222,7 +236,7 @@ const Homepage = () => {
 
         {/* //Project section */}
 
-        <div className="project-sec">
+        <div className="project-sec ">
           <div
             className={
               darkModeHandlerfunction == true
@@ -542,7 +556,6 @@ const Homepage = () => {
                   </div>
                 </div>
 
-               
                 {/* //Whatsapp Clone */}
 
                 <div className="project-card-main-body" data-aos="fade-up">
@@ -607,10 +620,9 @@ const Homepage = () => {
                   </div>
                 </div>
 
+                {/* //Personal Portfolio */}
 
-                 {/* //Personal Portfolio */}
-
-                 <div className="project-card-main-body" data-aos="fade-up">
+                <div className="project-card-main-body" data-aos="fade-up">
                   <div className="project-card-sub-body">
                     <div
                       className={
@@ -696,7 +708,7 @@ const Homepage = () => {
 
         {/* //Skill section */}
 
-        <div className="skill-sec" id="skill-sec">
+        <div className="skill-sec " id="skill-sec">
           <div
             className={
               darkModeHandlerfunction == true
