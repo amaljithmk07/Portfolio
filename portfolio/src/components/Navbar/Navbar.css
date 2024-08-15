@@ -6,7 +6,7 @@
   justify-content: flex-end;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 12;
 }
 .navbar-main {
   box-shadow: 0px 0px 20px 0px #abb3ff24;
