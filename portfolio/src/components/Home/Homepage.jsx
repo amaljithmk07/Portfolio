@@ -115,12 +115,11 @@ const Homepage = () => {
           style={
             darkModeHandlerfunction == false
               ? {
-                  background:
-                    "#000000 url(/home-new-back.png) no-repeat center/cover",
+                  background: "url(/home-new-back.png) no-repeat center/cover",
                 }
               : {
                   background:
-                    "#000000 url(/home-new-back1.png) no-repeat center/cover",
+                    " url(/home-new-back1.png) no-repeat center/cover",
                 }
           }
         ></div>
