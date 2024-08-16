@@ -65,13 +65,13 @@
 }
 .navbar-menu-data:hover {
   background-color: #8e99f8;
+
   color: aliceblue;
 }
 .navbar-phone-menu-sec,
 .navbar-island-menu-sec {
   display: none;
 }
-
 
 @media screen and (max-width: 900px) {
   .navbar-menu-sec {

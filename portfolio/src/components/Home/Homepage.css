@@ -156,10 +156,10 @@
   border-radius: 10px 7px;
   /* background-color: #7c89ff; */
   background-image: linear-gradient(
-    to right,
-    rgb(117, 200, 255),
-    rgb(131, 129, 255),
-    rgb(238, 109, 255)
+    45deg,
+    rgb(181, 117, 255),
+    rgb(238, 109, 255),
+    transparent
   );
   -webkit-tap-highlight-color: transparent;
 }
@@ -179,9 +179,11 @@
   /* background-color: #7c89ff; */
 
   background-image: linear-gradient(
-    to right,
-    rgb(138, 88, 255),
-    rgb(235, 87, 255)
+    45deg,
+    rgb(223, 117, 255),
+
+    rgb(238, 109, 255),
+    transparent
   );
   -webkit-tap-highlight-color: transparent;
 }

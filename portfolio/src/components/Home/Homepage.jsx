@@ -178,7 +178,7 @@ const Homepage = () => {
             <p className="home-sec-content-p">
               I'm a proficient Full Stack web developer adept in both front-end
               and back-end development, committed to crafting seamless digital
-              experiences. Please feel free to peruse my CV to get a glimpse of
+              experiences. Please feel free to persue my CV to get a glimpse of
               my portfolio and previous endeavors.
               {/* Hello, all! I'm Amaljith M K, an enthusiastic and motivated web
               developer with proficiency in both frontend and backend
