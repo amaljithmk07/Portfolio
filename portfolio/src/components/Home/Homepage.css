@@ -54,6 +54,7 @@
 .home-sec-darkmode {
   height: 50px;
   width: 45px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,13 +115,13 @@
   /* color: rgb(207, 200, 255); */
 }
 
-.seperate-background {
+/* .seperate-background {
   background-image: url("/home-back.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-}
+} */
 
 .home-sec-content-p {
   font-size: 0.95rem;
@@ -150,7 +151,13 @@
   font-weight: 600;
   cursor: pointer;
   border-radius: 10px 7px;
-  background-color: #7c89ff;
+  /* background-color: #7c89ff; */
+  background-image: linear-gradient(
+    to right,
+    rgb(76, 0, 255),
+    rgb(117, 114, 255),
+    rgb(225, 0, 255)
+  );
   -webkit-tap-highlight-color: transparent;
 }
 .home-sec-btn:hover {
@@ -166,7 +173,13 @@
   align-items: center;
   cursor: pointer;
   border-radius: 10px 7px;
-  background-color: #7c89ff;
+  /* background-color: #7c89ff; */
+  
+  background-image: linear-gradient(
+    to right,
+    rgb(138, 88, 255),
+    rgb(235, 87, 255)
+  );
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -202,7 +215,8 @@
   transform: rotate(0deg) translateX(15%);
 }
 .home-sec-content:hover .robot {
-  transform: scale(1.15) translateX(-5%);
+  /* transform: scale(1.15) translateX(-5%); */
+  transform: scale(1.05) translateX(-5%);
 }
 
 /* //Project section */

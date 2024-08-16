@@ -165,6 +165,7 @@ const Homepage = () => {
               </a>
             </div>
           </div>
+          {/* /////// */}
           <div
             className={
               darkModeHandlerfunction == true
@@ -217,7 +218,7 @@ const Homepage = () => {
           </div>
           <div className="home-sec-content">
             <div className="home-sec-content-img-sec">
-              <img
+              {/* <img
                 src={
                   darkModeHandlerfunction == true
                     ? "/robot-back.png"
@@ -225,8 +226,9 @@ const Homepage = () => {
                 }
                 alt=""
                 className="robot-back"
-              />
-              <img src="/robot.png" alt="" className="robot" />
+              /> */}
+              {/* <img src="/robot.png" alt="" className="robot" /> */}
+              <img src="/robot2.png" alt="" className="robot" />
             </div>{" "}
           </div>
         </div>
