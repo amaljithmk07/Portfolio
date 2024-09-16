@@ -86,7 +86,7 @@ const Homepage = () => {
   ///useEffect for Aos
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 1500, delay: 400 });
   }, {});
 
   const [showMore, setShowmore] = useState(false); //For Show more button
@@ -218,17 +218,9 @@ const Homepage = () => {
           </div>
           <div className="home-sec-content">
             <div className="home-sec-content-img-sec">
-              {/* <img
-                src={
-                  darkModeHandlerfunction == true
-                    ? "/robot-back.png"
-                    : "/robot-back-dark.png"
-                }
-                alt=""
-                className="robot-back"
-              /> */}
-              {/* <img src="/robot.png" alt="" className="robot" /> */}
-              <img src="/robot2.png" alt="" className="robot" />
+              <div className="robot">
+                <img src="/robot2.png" alt="" />
+              </div>
             </div>{" "}
           </div>
         </div>
@@ -721,148 +713,239 @@ const Homepage = () => {
             Expertise
             <div className="skill-title-underline"></div>
           </div>
-          <div className="skill-card-sec" data-aos="fade-up">
+          <div className="skill-card-sec">
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
             >
-              <img src="/react.png" alt="" className="skill-card-logo" />
-              React
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/react.png" alt="" className="skill-card-logo" />
+                React
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
             >
-              <img src="/redux.png" alt="" className="skill-card-logo" />
-              Redux
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/redux.png" alt="" className="skill-card-logo" />
+                Redux
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
             >
-              <img src="/mongodb.png" alt="" className="skill-card-logo" />
-              Mongo DB
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/mongodb.png" alt="" className="skill-card-logo" />
+                Mongo DB
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1000"
             >
-              <img src="/node.png" alt="" className="skill-card-logo" />
-              Node JS
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/node.png" alt="" className="skill-card-logo" />
+                Node JS
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
             >
-              <img src="/express.png" alt="" className="skill-card-logo" />
-              Express JS
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/express.png" alt="" className="skill-card-logo" />
+                Express JS
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
             >
-              <img src="/postman.png" alt="" className="skill-card-logo" />
-              Postman
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/postman.png" alt="" className="skill-card-logo" />
+                Postman
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
             >
-              <img src="/rest-api.png" alt="" className="skill-card-logo" />
-              REST API{" "}
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/rest-api.png" alt="" className="skill-card-logo" />
+                REST API{" "}
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="1000"
             >
-              <img src="/jwt.png" alt="" className="skill-card-logo" />
-              JWT
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/jwt.png" alt="" className="skill-card-logo" />
+                JWT
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="800"
+              data-aos-duration="1000"
             >
-              <img src="/git.png" alt="" className="skill-card-logo" />
-              Git
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/git.png" alt="" className="skill-card-logo" />
+                Git
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="1000"
             >
-              <img src="/bootstrap.png" alt="" className="skill-card-logo" />
-              Bootstrap
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/bootstrap.png" alt="" className="skill-card-logo" />
+                Bootstrap
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
             >
-              <img src="/javascript.png" alt="" className="skill-card-logo" />
-              Javascript
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/javascript.png" alt="" className="skill-card-logo" />
+                Javascript
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
             >
-              <img src="/css.png" alt="" className="skill-card-logo" />
-              CSS
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/css.png" alt="" className="skill-card-logo" />
+                CSS
+              </div>
             </div>
             <div
-              className={
-                darkModeHandlerfunction == true
-                  ? "skill-card-body"
-                  : "darkmode-skill-card-body"
-              }
+              className=""
               data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1000"
             >
-              <img src="/html.png" alt="" className="skill-card-logo" />
-              HTML
+              {" "}
+              <div
+                className={
+                  darkModeHandlerfunction == true
+                    ? "skill-card-body"
+                    : "darkmode-skill-card-body"
+                }
+              >
+                <img src="/html.png" alt="" className="skill-card-logo" />
+                HTML
+              </div>
             </div>
           </div>
         </div>
