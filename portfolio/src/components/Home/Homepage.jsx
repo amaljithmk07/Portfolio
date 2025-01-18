@@ -91,6 +91,138 @@ const Homepage = () => {
 
   const [showMore, setShowmore] = useState(false); //For Show more button
 
+  const projects = [
+    {
+      image: "/medicalequip.jpg",
+      title: " Medical Equipment",
+      paragraph:
+        " This dynamic web application supports a charitable cause by facilitating the donation of refurbished medical equipment to those in need. Users have the option to contribute either by donating equipment or by providing financial support.",
+      tools: ["Reactjs", "mongo", "expressjs"],
+      git_link: "https://github.com/amaljithmk07/Med.Equip-MERN",
+      web_link: "http://medicalequipment.vercel.app",
+    },
+    {
+      image: "/hemo.avif",
+      title: "Hemoglobe",
+      paragraph:
+        "This dynamic web application facilitates blood donation by providing extensive information on both donors and recipients. Users have the ability to download a certificate upon completing a donation.",
+
+      git_link: "https://github.com/amaljithmk07/Hemoglobe-MERN",
+      web_link: "http://hemoglobe.vercel.app",
+    },
+    {
+      image: "/framefinder.jpg",
+      title: " Frame Finder",
+      paragraph:
+        " This is a dynamic application where users can book photographers, review their photos, and communicate with each other. (In progress)",
+
+      git_link: "https://github.com/amaljithmk07/FrameFinder",
+      web_link: "http://framefinder.vercel.app",
+    },
+    {
+      image: "/bloogie.png",
+      title: "Bloogie",
+      paragraph:
+        " Bloogie is a dynamic web application that allows users to register, log in, and upload their blogs. Users can view blogs posted by others, as well as edit their own blog entries. (In progress)",
+
+      git_link: "https://github.com/amaljithmk07/Bloogie",
+      web_link: "http://bloogie.vercel.app",
+    },
+    {
+      image: "/weatherhut.png",
+      title: " WeatherHut",
+      paragraph:
+        " WeatherHut displays real-time weather for your current location and lets you search and save weather details for specific regions when signed in.",
+
+      git_link: "https://github.com/amaljithmk07/WeatherHut",
+      web_link: "http://weatherhut.vercel.app",
+    },
+    {
+      image: "/whatsapp.png",
+      title: "WhatsApp Clone",
+      paragraph:
+        "This application will allow users to send messages through the platform, replicating the core functionality of the original WhatsApp Web. (In progress)",
+
+      git_link: "https://github.com/amaljithmk07/Whatsapp",
+      web_link: "http://whatsapp-mini.vercel.app",
+    },
+    {
+      image: "/portfolio.jpg",
+      title: "Personal Portfolio",
+      paragraph:
+        "Interactive web application displaying extensive information about my professional portfolio, encompassing expertise, key projects, and contact details.",
+
+      git_link: "https://github.com/amaljithmk07/Portfolio",
+      web_link: "http://amaljithmk.vercel.app",
+    },
+  ];
+
+  const skills = [
+    {
+      image: "/gsap.png",
+      name: "GSAP",
+    },
+    {
+      image: "/next.png",
+      name: "Next Js",
+    },
+    {
+      image: "/wordpress.png",
+      name: "Wordpress",
+    },
+    {
+      image: "/react.png",
+      name: "React",
+    },
+    {
+      image: "/redux.png",
+      name: "Redux",
+    },
+    {
+      image: "/mongodb.png",
+      name: "Mongo DB",
+    },
+    {
+      image: "/node.png",
+      name: " Node JS",
+    },
+    {
+      image: "/express.png",
+      name: "Express JS",
+    },
+    {
+      image: "/postman.png",
+      name: "Postman",
+    },
+    {
+      image: "/rest-api.png",
+      name: "REST API",
+    },
+    {
+      image: "/jwt.png",
+      name: " JWT",
+    },
+    {
+      image: "/git.png",
+      name: " Git",
+    },
+    {
+      image: "/bootstrap.png",
+      name: "Bootstrap",
+    },
+    {
+      image: "/javascript.png",
+      name: " Javascript",
+    },
+    {
+      image: "/css.png",
+      name: " CSS",
+    },
+    {
+      image: "/html.png",
+      name: "HTML",
+    },
+  ];
   return (
     <div
       onClick={() =>
@@ -112,59 +244,55 @@ const Homepage = () => {
 
         <div
           className="new-back-img"
-          style={
-            darkModeHandlerfunction == false
-              ? {
-                  background: "url(/home-new-back.png) no-repeat center/cover",
-                }
-              : {
-                  background:
-                    " url(/home-new-back1.png) no-repeat center/cover",
-                }
-          }
+          // style={
+          //   darkModeHandlerfunction == false
+          //     ? {
+          //         background: "url(/home-new-back.png) no-repeat center/cover",
+          //       }
+          //     : {
+          //         background:
+          //           " url(/home-new-back1.png) no-repeat center/cover",
+          //       }
+          // }
         ></div>
-        <div className="home-sec " id="home-sec">
-          {/* //sidebar */}
-          <div className="home-sec-side-bar-sec">
-            <div className="home-sec-darkmode">
-              <div onClick={() => dispatch(DarkmodeHandler())}>
-                <img
-                  src={
-                    darkModeHandlerfunction == true
-                      ? "./darkmode.png"
-                      : "./lightmode.png "
-                  }
-                  className="darkmode-icon"
-                />
-              </div>{" "}
+        {/* //sidebar */}
+        <div className="home-sec-side-bar-sec">
+          <div className="home-sec-darkmode">
+            <div onClick={() => dispatch(DarkmodeHandler())}>
+              <img
+                src={
+                  darkModeHandlerfunction == true
+                    ? "./darkmode.png"
+                    : "./lightmode.png "
+                }
+                className="darkmode-icon"
+              />
             </div>{" "}
-            <div className="home-sec-side-bar">
-              <a
-                href="https://www.instagram.com/__amaljit/?utm_source=qr&igsh=MW1nYXR4MXN0MzVyMg%3D%3D"
-                target="_blank"
-              >
-                <img
-                  src="/instagram.png"
-                  alt=""
-                  className="home-sec-sidebar-logo"
-                />
-              </a>
-              <a href="https://www.linkedin.com/in/amaljithmk" target="_blank">
-                <img
-                  src="/linkedin.png"
-                  alt=""
-                  className="home-sec-sidebar-logo"
-                />{" "}
-              </a>
-              <a href="https://github.com/amaljithmk07" target="_blank">
-                <img
-                  src="/github.png"
-                  alt=""
-                  className="home-sec-sidebar-logo"
-                />{" "}
-              </a>
-            </div>
+          </div>{" "}
+          <div className="home-sec-side-bar">
+            <a
+              href="https://www.instagram.com/__amaljit/?utm_source=qr&igsh=MW1nYXR4MXN0MzVyMg%3D%3D"
+              target="_blank"
+            >
+              <img
+                src="/instagram.png"
+                alt=""
+                className="home-sec-sidebar-logo"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/amaljithmk" target="_blank">
+              <img
+                src="/linkedin.png"
+                alt=""
+                className="home-sec-sidebar-logo"
+              />{" "}
+            </a>
+            <a href="https://github.com/amaljithmk07" target="_blank">
+              <img src="/github.png" alt="" className="home-sec-sidebar-logo" />{" "}
+            </a>
           </div>
+        </div>
+        <div className="home-sec container" id="home-sec">
           {/* /////// */}
           <div
             className={
@@ -173,8 +301,19 @@ const Homepage = () => {
                 : "darkmode-home-sec-content  "
             }
           >
-            <h1>Hello !</h1>
-            <h1>I am Amaljith</h1>
+            <h1 className="title-font">
+              Hello, I'm
+              <div className="name_block">
+                <span>A</span>
+                <span>m</span>
+                <span>a</span>
+                <span>l</span>
+                <span>j</span>
+                <span>i</span>
+                <span>t</span>
+                <span>h</span>
+              </div>
+            </h1>
             <p className="home-sec-content-p">
               I'm a proficient Full Stack web developer adept in both front-end
               and back-end development, committed to crafting seamless digital
@@ -194,7 +333,7 @@ const Homepage = () => {
               <a
                 href="/Amaljith MERN Resume.pdf"
                 download="Amaljith MERN Resume.pdf"
-                className="home-sec-btn"
+                className="home-sec-btn linear-background"
               >
                 Download CV
                 <img src="/download.png" alt="" className="home-sec-btn-icon" />
@@ -202,14 +341,14 @@ const Homepage = () => {
 
               <a
                 href="https://github.com/amaljithmk07"
-                className="home-sec-socialmedia-btn"
+                className="home-sec-socialmedia-btn linear-background "
                 target="_blank"
               >
                 <img src="/github.png" alt="" className="home-sec-btn-icon" />
               </a>
               <a
                 href="https://www.linkedin.com/in/amaljithmk/"
-                className="home-sec-socialmedia-btn"
+                className="home-sec-socialmedia-btn linear-background "
                 target="_blank"
               >
                 <img src="/linkedin.png" alt="" className="home-sec-btn-icon" />
@@ -219,17 +358,19 @@ const Homepage = () => {
           <div className="home-sec-content">
             <div className="home-sec-content-img-sec">
               <div className="robot">
-                <img src="/robot2.png" alt="" />
+                {/* <img src="/robot2.png" alt="" /> */}
+                <img src="/robot-new.svg" alt="" />
+                <div className="stars">
+                  <img src="/robot-new1.svg" alt="" />
+                </div>
               </div>
             </div>{" "}
           </div>
         </div>
 
-        {/* //////////////////////////////////////// */}
-
         {/* //Project section */}
 
-        <div className="project-sec ">
+        <div className="project-sec container">
           <div
             className={
               darkModeHandlerfunction == true
@@ -251,436 +392,120 @@ const Homepage = () => {
             ></div>
           </div>
           <div className="project-content-sec">
-            {/* //project card body */}
-
             {/* //medicalequipment */}
 
-            <div className="project-card-main-body" data-aos="fade-up">
-              <div className="project-card-sub-body">
-                <div
-                  className={
-                    darkModeHandlerfunction == true
-                      ? "project-card-body"
-                      : "darkmode-project-card-body"
-                  }
-                >
-                  <div className="project-card-img-sec">
-                    <img
-                      src="/medicalequip.jpg"
-                      alt=""
-                      className="project-card-img"
-                    />
+            {projects.slice(0, 4).map((data, index) => (
+              <div
+                className={`project-card-body ${
+                  darkModeHandlerfunction == true
+                    ? ""
+                    : "darkmode-project-card-body"
+                }`}
+              >
+                <div className="project-card-img-sec">
+                  <img src={data.image} alt="" className="project-card-img" />
+                </div>
+                <div className="project-card-content-sec">
+                  <div className="project-card-project-title">
+                    {data.title}{" "}
                   </div>
-                  <div className="project-card-content-sec">
-                    <div className="project-card-project-title">
-                      Medical Equipment
-                    </div>
-                    <div className="project-card-project-details">
-                      This dynamic web application supports a charitable cause
-                      by facilitating the donation of refurbished medical
-                      equipment to those in need. Users have the option to
-                      contribute either by donating equipment or by providing
-                      financial support.
-                    </div>
-                    <div className="project-card-project-logo-sec">
-                      <a
-                        href="https://github.com/amaljithmk07/Med.Equip-MERN"
-                        className="project-github-btn"
-                        target="_blank"
-                      >
-                        <img
-                          src="/github.png"
-                          alt=""
-                          className={
-                            darkModeHandlerfunction == true
-                              ? "project-logo "
-                              : "darkmode-project-logo"
-                          }
-                        />
-                        <div class="project-logo-text">View on GitHub</div>
-                      </a>
-                      <a
-                        href="http://medicalequipment.vercel.app"
-                        className="project-btn"
-                        target="_blank"
-                      >
-                        Go to web
-                        <img src="/web.png" alt="" className="project-logo" />
-                      </a>{" "}
-                    </div>
+                  <div className="project-card-project-details">
+                    {data.paragraph}
+                  </div>
+                  {/* <div className="project-card-tools">
+                    {data.tools?.map((tools1) => (
+                      <span>{tools1}</span>
+                    ))}
+                  </div> */}
+                  <div className="project-card-project-logo-sec">
+                    <a
+                      href={data.git_link}
+                      className="project-github-btn"
+                      target="_blank"
+                    >
+                      <img
+                        src="/github.png"
+                        alt=""
+                        className={
+                          darkModeHandlerfunction == true
+                            ? "project-logo "
+                            : "project-logo  darkmode-project-logo"
+                        }
+                      />
+                      <div class="project-logo-text">View on GitHub</div>
+                    </a>
+                    <a
+                      href={data.web_link}
+                      className="project-btn linear-background"
+                      target="_blank"
+                    >
+                      Go to web
+                      <img src="/web.png" alt="" className="project-logo" />
+                    </a>{" "}
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* //Hemoglobe */}
-
-            <div className="project-card-main-body" data-aos="fade-up">
-              <div className="project-card-sub-body">
-                <div
-                  className={
-                    darkModeHandlerfunction == true
-                      ? "project-card-body"
-                      : "darkmode-project-card-body"
-                  }
-                >
-                  <div className="project-card-img-sec">
-                    <img src="/hemo.avif" alt="" className="project-card-img" />
-                  </div>
-                  <div className="project-card-content-sec">
-                    <div className="project-card-project-title">Hemoglobe</div>
-                    <div className="project-card-project-details">
-                      This dynamic web application facilitates blood donation by
-                      providing extensive information on both donors and
-                      recipients. Users have the ability to download a
-                      certificate upon completing a donation.
-                    </div>
-                    <div className="project-card-project-logo-sec">
-                      <a
-                        href="https://github.com/amaljithmk07/Hemoglobe-MERN"
-                        className="project-github-btn"
-                        target="_blank"
-                      >
-                        <img
-                          src="/github.png"
-                          alt=""
-                          className={
-                            darkModeHandlerfunction == true
-                              ? "project-logo "
-                              : "darkmode-project-logo"
-                          }
-                        />
-                        <div class="project-logo-text">View on GitHub</div>
-                      </a>
-                      <a
-                        href="http://hemoglobe.vercel.app"
-                        className="project-btn"
-                        target="_blank"
-                      >
-                        Go to web
-                        <img src="/web.png" alt="" className="project-logo" />
-                      </a>{" "}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* //Frame Finder */}
-
-            <div className="project-card-main-body" data-aos="fade-up">
-              <div className="project-card-sub-body">
-                <div
-                  className={
-                    darkModeHandlerfunction == true
-                      ? "project-card-body"
-                      : "darkmode-project-card-body"
-                  }
-                >
-                  {" "}
-                  <div className="project-card-img-sec">
-                    <img
-                      src="/framefinder.jpg"
-                      alt=""
-                      className="project-card-img"
-                    />
-                  </div>
-                  <div className="project-card-content-sec">
-                    <div className="project-card-project-title">
-                      Frame Finder
-                    </div>
-                    <div className="project-card-project-details">
-                      This is a dynamic application where users can book
-                      photographers, review their photos, and communicate with
-                      each other. (In progress)
-                    </div>
-                    <div className="project-card-project-logo-sec">
-                      <a
-                        href="https://github.com/amaljithmk07/FrameFinder"
-                        className="project-github-btn"
-                        target="_blank"
-                      >
-                        <img
-                          src="/github.png"
-                          alt=""
-                          className={
-                            darkModeHandlerfunction == true
-                              ? "project-logo "
-                              : "darkmode-project-logo"
-                          }
-                        />
-                        <div class="project-logo-text">View on GitHub</div>
-                      </a>
-                      <a
-                        href="http://framefinder.vercel.app"
-                        className="project-btn"
-                        target="_blank"
-                      >
-                        Go to web
-                        <img src="/web.png" alt="" className="project-logo" />
-                      </a>{" "}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* //Bloogie */}
-
-            <div className="project-card-main-body" data-aos="fade-up">
-              <div className="project-card-sub-body">
-                <div
-                  className={
-                    darkModeHandlerfunction == true
-                      ? "project-card-body"
-                      : "darkmode-project-card-body"
-                  }
-                >
-                  {" "}
-                  <div className="project-card-img-sec">
-                    <img
-                      src="/bloogie.png"
-                      alt=""
-                      className="project-card-img"
-                      style={{ width: "70%" }}
-                    />
-                  </div>
-                  <div className="project-card-content-sec">
-                    <div className="project-card-project-title">Bloogie</div>
-                    <div className="project-card-project-details">
-                      Bloogie is a dynamic web application that allows users to
-                      register, log in, and upload their blogs. Users can view
-                      blogs posted by others, as well as edit their own blog
-                      entries. (In progress)
-                    </div>
-                    <div className="project-card-project-logo-sec">
-                      <a
-                        href="https://github.com/amaljithmk07/Bloogie"
-                        className="project-github-btn"
-                        target="_blank"
-                      >
-                        <img
-                          src="/github.png"
-                          alt=""
-                          className={
-                            darkModeHandlerfunction == true
-                              ? "project-logo "
-                              : "darkmode-project-logo"
-                          }
-                        />
-                        <div class="project-logo-text">View on GitHub</div>
-                      </a>
-                      <a
-                        href="http://bloogie.vercel.app"
-                        className="project-btn"
-                        target="_blank"
-                      >
-                        Go to web
-                        <img src="/web.png" alt="" className="project-logo" />
-                      </a>{" "}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            ))}
             {showMore == true ? (
               <>
-                {/* //Weather Hut */}
-
-                <div className="project-card-main-body" data-aos="fade-up">
-                  <div className="project-card-sub-body">
-                    <div
-                      className={
-                        darkModeHandlerfunction == true
-                          ? "project-card-body"
-                          : "darkmode-project-card-body"
-                      }
-                    >
-                      {" "}
-                      <div className="project-card-img-sec">
-                        <img
-                          src="/weatherhut.png"
-                          alt=""
-                          className="project-card-img"
-                        />
+                {projects.slice(4, 7).map((data, index) => (
+                  <div
+                    className={`project-card-body ${
+                      darkModeHandlerfunction == true
+                        ? ""
+                        : "darkmode-project-card-body"
+                    }`}
+                  >
+                    <div className="project-card-img-sec">
+                      <img
+                        src={data.image}
+                        alt=""
+                        className="project-card-img"
+                      />
+                    </div>
+                    <div className="project-card-content-sec">
+                      <div className="project-card-project-title">
+                        {data.title}{" "}
                       </div>
-                      <div className="project-card-content-sec">
-                        <div className="project-card-project-title">
-                          WeatherHut
-                        </div>
-                        <div className="project-card-project-details">
-                          WeatherHut displays real-time weather for your current
-                          location and lets you search and save weather details
-                          for specific regions when signed in.
-                        </div>
-                        <div className="project-card-project-logo-sec">
-                          <a
-                            href="https://github.com/amaljithmk07/WeatherHut"
-                            className="project-github-btn"
-                            target="_blank"
-                          >
-                            <img
-                              src="/github.png"
-                              alt=""
-                              className={
-                                darkModeHandlerfunction == true
-                                  ? "project-logo "
-                                  : "darkmode-project-logo"
-                              }
-                            />
-                            <div class="project-logo-text">View on GitHub</div>
-                          </a>
-                          <a
-                            href="http://weatherhut.vercel.app"
-                            className="project-btn"
-                            target="_blank"
-                          >
-                            Go to web
-                            <img
-                              src="/web.png"
-                              alt=""
-                              className="project-logo"
-                            />
-                          </a>{" "}
-                        </div>
+                      <div className="project-card-project-details">
+                        {data.paragraph}
+                      </div>
+
+                      <div className="project-card-project-logo-sec">
+                        <a
+                          href={data.git_link}
+                          className="project-github-btn"
+                          target="_blank"
+                        >
+                          <img
+                            src="/github.png"
+                            alt=""
+                            className={
+                              darkModeHandlerfunction == true
+                                ? "project-logo "
+                                : "project-logo  darkmode-project-logo"
+                            }
+                          />
+                          <div class="project-logo-text">View on GitHub</div>
+                        </a>
+                        <a
+                          href={data.web_link}
+                          className="project-btn linear-background"
+                          target="_blank"
+                        >
+                          Go to web
+                          <img src="/web.png" alt="" className="project-logo" />
+                        </a>{" "}
                       </div>
                     </div>
                   </div>
-                </div>
-
-                {/* //Whatsapp Clone */}
-
-                <div className="project-card-main-body" data-aos="fade-up">
-                  <div className="project-card-sub-body">
-                    <div
-                      className={
-                        darkModeHandlerfunction == true
-                          ? "project-card-body"
-                          : "darkmode-project-card-body"
-                      }
-                    >
-                      {" "}
-                      <div className="project-card-img-sec">
-                        <img
-                          src="/whatsapp.png"
-                          alt=""
-                          className="project-card-img"
-                        />
-                      </div>
-                      <div className="project-card-content-sec">
-                        <div className="project-card-project-title">
-                          WhatsApp Clone
-                        </div>
-                        <div className="project-card-project-details">
-                          This application will allow users to send messages
-                          through the platform, replicating the core
-                          functionality of the original WhatsApp Web. (In
-                          progress)
-                        </div>
-                        <div className="project-card-project-logo-sec">
-                          <a
-                            href="https://github.com/amaljithmk07/Whatsapp"
-                            className="project-github-btn"
-                            target="_blank"
-                          >
-                            <img
-                              src="/github.png"
-                              alt=""
-                              className={
-                                darkModeHandlerfunction == true
-                                  ? "project-logo "
-                                  : "darkmode-project-logo"
-                              }
-                            />
-                            <div class="project-logo-text">View on GitHub</div>
-                          </a>
-                          <a
-                            href="http://whatsapp-mini.vercel.app"
-                            className="project-btn"
-                            target="_blank"
-                          >
-                            Go to web
-                            <img
-                              src="/web.png"
-                              alt=""
-                              className="project-logo"
-                            />
-                          </a>{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* //Personal Portfolio */}
-
-                <div className="project-card-main-body" data-aos="fade-up">
-                  <div className="project-card-sub-body">
-                    <div
-                      className={
-                        darkModeHandlerfunction == true
-                          ? "project-card-body"
-                          : "darkmode-project-card-body"
-                      }
-                    >
-                      {" "}
-                      <div className="project-card-img-sec">
-                        <img
-                          src="/portfolio.jpg"
-                          alt=""
-                          className="project-card-img"
-                        />
-                      </div>
-                      <div className="project-card-content-sec">
-                        <div className="project-card-project-title">
-                          Personal Portfolio
-                        </div>
-                        <div className="project-card-project-details">
-                          Interactive web application displaying extensive
-                          information about my professional portfolio,
-                          encompassing expertise, key projects, and contact
-                          details.
-                        </div>
-                        <div className="project-card-project-logo-sec">
-                          <a
-                            href="https://github.com/amaljithmk07/Portfolio"
-                            className="project-github-btn"
-                            target="_blank"
-                          >
-                            <img
-                              src="/github.png"
-                              alt=""
-                              className={
-                                darkModeHandlerfunction == true
-                                  ? "project-logo "
-                                  : "darkmode-project-logo"
-                              }
-                            />
-                            <div class="project-logo-text">View on GitHub</div>
-                          </a>
-                          <a
-                            href="http://amaljithmk.vercel.app"
-                            className="project-btn"
-                            target="_blank"
-                          >
-                            Go to web
-                            <img
-                              src="/web.png"
-                              alt=""
-                              className="project-logo"
-                            />
-                          </a>{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </>
             ) : (
-              <></>
+              ""
             )}
           </div>
+
           <div
             className="showmore-sec"
             onClick={() => setShowmore((prev) => !prev)}
@@ -701,7 +526,7 @@ const Homepage = () => {
 
         {/* //Skill section */}
 
-        <div className="skill-sec " id="skill-sec">
+        <div className="skill-sec container" id="skill-sec">
           <div
             className={
               darkModeHandlerfunction == true
@@ -714,319 +539,105 @@ const Homepage = () => {
             <div className="skill-title-underline"></div>
           </div>
           <div className="skill-card-sec">
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
-            >
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/react.png" alt="" className="skill-card-logo" />
-                React
+            {skills.map((skills_data, index) => (
+              <div data-aos="fade-up" data-aos-delay={`${index * 2}00`}>
+                <div
+                  className={
+                    darkModeHandlerfunction == true
+                      ? "skill-card-body"
+                      : " skill-card-body darkmode-skill-card-body"
+                  }
+                >
+                  <img
+                    src={skills_data.image}
+                    alt=""
+                    className="skill-card-logo"
+                  />
+                  {skills_data.name}{" "}
+                </div>
               </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/redux.png" alt="" className="skill-card-logo" />
-                Redux
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/mongodb.png" alt="" className="skill-card-logo" />
-                Mongo DB
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="700"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/node.png" alt="" className="skill-card-logo" />
-                Node JS
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="900"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/express.png" alt="" className="skill-card-logo" />
-                Express JS
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/postman.png" alt="" className="skill-card-logo" />
-                Postman
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/rest-api.png" alt="" className="skill-card-logo" />
-                REST API{" "}
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="600"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/jwt.png" alt="" className="skill-card-logo" />
-                JWT
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="800"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/git.png" alt="" className="skill-card-logo" />
-                Git
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="600"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/bootstrap.png" alt="" className="skill-card-logo" />
-                Bootstrap
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/javascript.png" alt="" className="skill-card-logo" />
-                Javascript
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/css.png" alt="" className="skill-card-logo" />
-                CSS
-              </div>
-            </div>
-            <div
-              className=""
-              data-aos="fade-up"
-              data-aos-delay="700"
-              data-aos-duration="1000"
-            >
-              {" "}
-              <div
-                className={
-                  darkModeHandlerfunction == true
-                    ? "skill-card-body"
-                    : "darkmode-skill-card-body"
-                }
-              >
-                <img src="/html.png" alt="" className="skill-card-logo" />
-                HTML
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
         {/* //contact section */}
-
-        <div
-          className={
-            darkModeHandlerfunction == true
-              ? "contact-sec"
-              : "darkmode-contact-sec"
-          }
-        >
-          <div className="contact-sec-left-body" id="contact-sec">
-            <div className="contact-sec-title-1" data-aos="fade-up">
-              {/* CONTACT US */}
-              CONNECT ME{" "}
+        <div className="contact-sec-wrap">
+          <div
+            className={
+              darkModeHandlerfunction == true
+                ? "contact-sec container "
+                : "darkmode-contact-sec container"
+            }
+          >
+            <div className="contact-sec-left-body" id="contact-sec">
+              <div className="contact-sec-title-1" data-aos="fade-up">
+                {/* CONTACT US */}
+                CONNECT ME{" "}
+              </div>
+              <div className="contact-sec-title-2" data-aos="fade-up">
+                {" "}
+                Let's talk <br /> about you
+              </div>
             </div>
-            <div className="contact-sec-title-2" data-aos="fade-up">
-              {" "}
-              Let's talk <br /> about you
-            </div>
-          </div>
-          <div className="contact-sec-right-body">
-            <form
-              action=""
-              className="form-sec"
-              ref={form}
-              name="myForm"
-              data-aos="fade-up"
-            >
-              <div className="form-title"> Send me a Message</div>
-              <div className="form-input-field-sec">
-                Full Name
-                <input
-                  type="text"
-                  className="form-input-field"
-                  required
-                  name="from_name"
-                />
-              </div>
-              <div className="form-input-field-sec">
-                Email
-                <input
-                  type="text"
-                  className="form-input-field"
-                  required
-                  name="from_email"
-                />
-              </div>
-              <div className="form-input-field-sec">
-                Subject
-                <input
-                  type="text"
-                  className="form-input-field"
-                  required
-                  name="subject"
-                />
-              </div>
-              <div className="form-input-field-sec">
-                Your message here
-                <input
-                  type="text"
-                  className="form-input-field"
-                  required
-                  name="message"
-                />
-              </div>
-              {loader == false ? (
-                <button className="form-send-btn" onClick={sendEmail}>
+            <div className="contact-sec-right-body">
+              <form
+                action=""
+                className="form-sec"
+                ref={form}
+                name="myForm"
+                data-aos="fade-up"
+              >
+                <div className="form-title"> Send me a Message</div>
+                <div className="form-input-field-sec">
+                  Full Name
+                  <input
+                    type="text"
+                    className="form-input-field"
+                    required
+                    name="from_name"
+                  />
+                </div>
+                <div className="form-input-field-sec">
+                  Email
+                  <input
+                    type="text"
+                    className="form-input-field"
+                    required
+                    name="from_email"
+                  />
+                </div>
+                <div className="form-input-field-sec">
+                  Subject
+                  <input
+                    type="text"
+                    className="form-input-field"
+                    required
+                    name="subject"
+                  />
+                </div>
+                <div className="form-input-field-sec">
+                  Your message here
+                  <input
+                    type="text"
+                    className="form-input-field"
+                    required
+                    name="message"
+                  />
+                </div>
+                {loader == false ? (
+                  <button className="form-send-btn" onClick={sendEmail}>
+                    <>
+                      Send{" "}
+                      <img src="/send.png" alt="" className="form-btn-icon" />
+                    </>
+                  </button>
+                ) : (
                   <>
-                    Send{" "}
-                    <img src="/send.png" alt="" className="form-btn-icon" />
+                    <Loader />
                   </>
-                </button>
-              ) : (
-                <>
-                  <Loader />
-                </>
-              )}
-            </form>
+                )}
+              </form>
+            </div>
           </div>
         </div>
 
