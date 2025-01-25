@@ -15,6 +15,7 @@
 
 .homepage-main {
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .darkmode-homepage-main {
@@ -26,7 +27,7 @@
   display: flex;
   margin: 25px 0 15px 0;
   text-transform: uppercase;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 
@@ -164,6 +165,11 @@
 .title-font {
   font-family: "Poppins", serif;
   line-height: 100%;
+
+}
+
+.title-font h2 {
+  margin-top: 25px;
 }
 
 .darkmode-icon {
@@ -808,10 +814,11 @@
 
 @keyframes cardPosition {
   from {
-    transform: translateX(-50%),translateY(-50%);
+    transform: translateX(-50%), translateY(-50%);
   }
-  to{
-    transform: translateX(-0%),translateY(-0%);
+
+  to {
+    transform: translateX(-0%), translateY(-0%);
   }
 }
 

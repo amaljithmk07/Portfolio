@@ -8,6 +8,7 @@ import { DarkmodeHandler } from "../../redux/reducer/Reducer";
 import { DynamicOffHandler } from "../../redux/reducer/Dynamic";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import SplitTextAnimation from "./Splittext";
 
 const Homepage = () => {
   const form = useRef();
@@ -223,6 +224,10 @@ const Homepage = () => {
       name: "HTML",
     },
   ];
+
+  const sectionsRef = useRef([]);
+  SplitTextAnimation(sectionsRef, "trigger_title");
+
   return (
     <div
       onClick={() =>
@@ -300,10 +305,11 @@ const Homepage = () => {
                 ? "home-sec-content seperate-background"
                 : "darkmode-home-sec-content  "
             }
+            ref={(el) => (sectionsRef.current[0] = el)}
           >
-            <h1 className="title-font">
+            <h1 className="title-font trigger_title">
               Hello, I'm
-              <div className="name_block">
+              {/* <div className="name_block">
                 <span>A</span>
                 <span>m</span>
                 <span>a</span>
@@ -312,9 +318,11 @@ const Homepage = () => {
                 <span>i</span>
                 <span>t</span>
                 <span>h</span>
-              </div>
+                </div> */}
+                <br />
+              <h2 className="">AMALJITH</h2>
             </h1>
-            <p className="home-sec-content-p">
+            <p className="home-sec-content-p ">
               I'm a proficient Full Stack web developer adept in both front-end
               and back-end development, committed to crafting seamless digital
               experiences. Please feel free to persue my CV to get a glimpse of
